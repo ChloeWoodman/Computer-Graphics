@@ -1,0 +1,8 @@
+﻿  main.cpp
+V:\GitHub\milestones-ChloeWoodman\Lab 3\MeshWireframeDrawer\main.cpp(40,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+V:\GitHub\milestones-ChloeWoodman\Lab 3\MeshWireframeDrawer\main.cpp(43,26): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+V:\GitHub\milestones-ChloeWoodman\Lab 3\MeshWireframeDrawer\main.cpp(65,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+V:\GitHub\milestones-ChloeWoodman\Lab 3\MeshWireframeDrawer\main.cpp(66,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+V:\GitHub\milestones-ChloeWoodman\Lab 3\MeshWireframeDrawer\main.cpp(67,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+V:\GitHub\milestones-ChloeWoodman\Lab 3\MeshWireframeDrawer\main.cpp(68,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  mesh_lines.vcxproj -> V:\GitHub\milestones-ChloeWoodman\Lab 3\MeshWireframeDrawer\x64\Debug\mesh_lines.exe

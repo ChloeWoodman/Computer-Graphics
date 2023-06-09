@@ -1,0 +1,4203 @@
+# Exported for PBRT Version : v3 Master Branch
+
+Film "image"
+	"integer yresolution" [1080]
+	"float scale" [1.0]
+	"float diagonal" [43.2665287723]
+	"integer xresolution" [1920]
+
+Sampler "halton"
+	"integer pixelsamples" [1000]
+
+PixelFilter "gaussian"
+	"float ywidth" [2.0]
+	"float xwidth" [2.0]
+	"float alpha" [2.0]
+
+Integrator "path"
+	"string lightsamplestrategy" ["spatial"]
+	"integer maxdepth" [5]
+	"float rrthreshold" [1.0]
+
+Accelerator "bvh"
+	"string splitmethod" ["sah"]
+	"integer maxnodeprims" [4]
+
+# Camera begin
+Scale -1 1 1
+LookAt -25.148364 26.358925 47.128357 19.305188 19.327177 -44.828231 0.029893 0.997639 -0.061837
+Camera "perspective"
+	"float fov" [54.4322231146]
+	"float screenwindow" [-1.0 1.0 -0.8 0.8]
+# Camera end
+
+WorldBegin
+	AttributeBegin
+		# Maya Directional Light : |directionalLight1|directionalLightShape1
+		LightSource "distant"
+			"point to" [-0.0 -0.0 -1.0]
+			"rgb scale" [10.0 10.0 10.0]
+			"rgb L" [1.0 1.0 0.75]
+	AttributeEnd
+
+	AttributeBegin
+		# Maya Point Light : |pointLight1|pointLightShape1
+		Translate 15.0898299261 22.8903511519 -7.75769082933
+		LightSource "point"
+			"rgb I" [1.0 0.218146443367 0.0320000052452]
+			"rgb scale" [100.0 100.0 100.0]
+	AttributeEnd
+
+	AttributeBegin
+		# Maya Point Light : |pointLight2|pointLightShape2
+		Translate 117.359561788 79.7986472266 -439.023481052
+		LightSource "point"
+			"rgb I" [1.0 0.218146443367 0.0320000052452]
+			"rgb scale" [100.0 100.0 100.0]
+	AttributeEnd
+
+	AttributeBegin
+		# Maya Point Light : |pointLight3|pointLightShape3
+		Translate 355.350181483 49.37899093 -857.83035586
+		LightSource "point"
+			"rgb I" [1.0 0.218146443367 0.0320000052452]
+			"rgb scale" [100.0 100.0 100.0]
+	AttributeEnd
+
+	AttributeBegin
+		# Maya Point Light : |pointLight4|pointLightShape4
+		Translate 766.242369288 160.353847677 -1190.17505062
+		LightSource "point"
+			"rgb I" [1.0 0.218146443367 0.0320000052452]
+			"rgb scale" [100.0 100.0 100.0]
+	AttributeEnd
+
+	AttributeBegin
+		# Maya Point Light : |pointLight5|pointLightShape5
+		Translate 790.942029173 61.1377509966 -620.721002651
+		LightSource "point"
+			"rgb I" [1.0 0.218146443367 0.0320000052452]
+			"rgb scale" [100.0 100.0 100.0]
+	AttributeEnd
+
+	AttributeBegin
+		# Maya Point Light : |pointLight6|pointLightShape6
+		Translate 978.258454939 238.667221055 -949.835090554
+		LightSource "point"
+			"rgb I" [1.0 0.218146443367 0.0320000052452]
+			"rgb scale" [100.0 100.0 100.0]
+	AttributeEnd
+
+	AttributeBegin
+		# Maya Point Light : |pointLight7|pointLightShape7
+		Translate 18.9657042746 114.653006811 -439.023481052
+		LightSource "point"
+			"rgb I" [1.0 0.218146443367 0.0320000052452]
+			"rgb scale" [100.0 100.0 100.0]
+	AttributeEnd
+
+	AttributeBegin
+		# Maya Point Light : |pointLight8|pointLightShape8
+		Translate 574.07724581 315.355996916 -1068.66076749
+		LightSource "point"
+			"rgb I" [1.0 0.218146443367 0.0320000052452]
+			"rgb scale" [100.0 100.0 100.0]
+	AttributeEnd
+
+	AttributeBegin
+		# Maya Point Light : |pointLight9|pointLightShape9
+		Translate -2.92529647082 32.7407690187 -75.3414799689
+		LightSource "point"
+			"rgb I" [1.0 0.218146443367 0.0320000052452]
+			"rgb scale" [100.0 100.0 100.0]
+	AttributeEnd
+
+	AttributeBegin
+		# Maya Spot Light : |spotLight1|spotLightShape1
+		LightSource "spot"
+			"rgb scale" [5194.80517578 5194.80517578 5194.80517578]
+			"point from" [0.0 111.559630107 1.7495860919]
+			"point to" [0.0 110.560644603 1.70455317297]
+			"rgb I" [1.0 0.838158607483 0.473999977112]
+			"float coneangle" [42.143675642]
+			"float conedeltaangle" [10.0]
+	AttributeEnd
+
+	AttributeBegin
+		# Maya Spot Light : |spotLight2|spotLightShape2
+		LightSource "spot"
+			"rgb scale" [155844.15625 155844.15625 155844.15625]
+			"point from" [39.8080871711 507.88727415 -29.5341003439]
+			"point to" [39.8080871711 499.553379673 -29.5341003439]
+			"rgb I" [0.0650000199676 0.422077924013 0.380877077579]
+			"float coneangle" [13.443790706]
+			"float conedeltaangle" [3.50649350045]
+	AttributeEnd
+
+	Texture "file28" "spectrum" "imagemap"
+		"float vdelta" [0.0]
+		"float udelta" [0.0]
+		"string mapping" ["uv"]
+		"string filename" ["C:/Users/Peppe/Documents/GitHub/milestones-ChloeWoodman/code/rasterizer/Software-Rasteriser-Starter-main/textures/seaweed.tga"]
+		"float uscale" [1.0]
+		"bool gamma" ["true"]
+		"float vscale" [1.0]
+
+	Texture "Sandfile28" "spectrum" "imagemap"
+		"float vdelta" [0.0]
+		"float udelta" [0.0]
+		"string mapping" ["uv"]
+		"string filename" [""]
+		"float uscale" [1.0]
+		"bool gamma" ["true"]
+		"float vscale" [1.0]
+
+	Texture "Coralfile28" "spectrum" "imagemap"
+		"float vdelta" [0.0]
+		"float udelta" [0.0]
+		"string mapping" ["uv"]
+		"string filename" ["C:/Users/Peppe/Documents/GitHub/milestones-ChloeWoodman/code/rasterizer/Software-Rasteriser-Starter-main/textures/coral.tga"]
+		"float uscale" [1.0]
+		"bool gamma" ["true"]
+		"float vscale" [1.0]
+
+	Texture "Backgroundfile28" "spectrum" "imagemap"
+		"float vdelta" [0.0]
+		"float udelta" [0.0]
+		"string mapping" ["uv"]
+		"string filename" ["C:/Users/Peppe/Documents/GitHub/milestones-ChloeWoodman/code/rasterizer/Software-Rasteriser-Starter-main/textures/underwater.tga"]
+		"float uscale" [1.0]
+		"bool gamma" ["true"]
+		"float vscale" [1.0]
+
+	MakeNamedMaterial "PBRTPlasticFoliageMaterial1"
+		"rgb Ks" [0.0 0.140000000596 0.0]
+		"bool remaproughness" ["true"]
+		"float roughness" [0.10000000149]
+		"string type" ["plastic"]
+		"texture Kd" ["file28"]
+
+	MakeNamedMaterial "PBRTMatteMaterial2"
+		"float sigma" [0.0]
+		"string type" ["matte"]
+		"texture Kd" ["Sandfile28"]
+
+	MakeNamedMaterial "PBRTMatteSandMaterial3"
+		"float sigma" [0.0]
+		"string type" ["matte"]
+		"rgb Kd" [0.527000010014 0.433439970016 0.222920998931]
+
+	MakeNamedMaterial "PBRTMetalFishMaterial1"
+		"bool remaproughness" ["true"]
+		"rgb k" [0.5 0.5 0.5]
+		"rgb eta" [0.5 0.5 0.5]
+		"string type" ["metal"]
+		"float roughness" [0.00999999977648]
+
+	MakeNamedMaterial "PBRTMatteCoralMaterial1"
+		"float sigma" [0.0]
+		"string type" ["matte"]
+		"texture Kd" ["Coralfile28"]
+
+	MakeNamedMaterial "PBRTTranslucentMaterial1"
+		"rgb reflect" [0.957000017166 0.957000017166 0.957000017166]
+		"rgb Kd" [1.0 1.0 0.570999979973]
+		"float roughness" [0.10000000149]
+		"rgb Ks" [1.0 1.0 0.570999979973]
+		"rgb transmit" [0.5 0.5 0.5]
+		"bool remaproughness" ["true"]
+		"string type" ["translucent"]
+
+	MakeNamedMaterial "PBRTDisneyBackgroundMaterial1"
+		"float difftrans" [1.0]
+		"float spectrans" [0.0]
+		"float clearcoatgloss" [1.0]
+		"texture color" ["Backgroundfile28"]
+		"float sheentint" [0.5]
+		"float speculartint" [0.0]
+		"float roughness" [0.5]
+		"rgb scatterdistance" [0.0 0.0 0.0]
+		"float flatness" [0.0]
+		"float eta" [1.5]
+		"bool thin" ["false"]
+		"float clearcoat" [0.0]
+		"float anisotropic" [0.0]
+		"float metallic" [0.0]
+		"string type" ["disney"]
+		"float sheen" [0.0]
+
+	ObjectBegin "|foliage4|coral|SphereFBXASC046001"
+		# Maya Geometry : |foliage4|coral|SphereFBXASC046001|SphereFBXASC046001Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__coral__SphereFBXASC046001__SphereFBXASC046001Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|coral|SphereFBXASC046001
+		ObjectInstance "|foliage4|coral|SphereFBXASC046001"
+	AttributeEnd
+
+	ObjectBegin "|ground1|pPlane2"
+		# Maya Geometry : |ground1|pPlane2|pPlaneShape2
+		NamedMaterial "PBRTMatteMaterial2"
+		Include "__ground1__pPlane2__pPlaneShape2.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |ground1|pPlane2
+		ObjectInstance "|ground1|pPlane2"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|coral|SphereFBXASC046003"
+		# Maya Geometry : |foliage4|coral|SphereFBXASC046003|SphereFBXASC046003Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__coral__SphereFBXASC046003__SphereFBXASC046003Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|coral|SphereFBXASC046003
+		ObjectInstance "|foliage4|coral|SphereFBXASC046003"
+	AttributeEnd
+
+	ObjectBegin "|ground1|pPlane4"
+		# Maya Geometry : |ground1|pPlane4|pPlaneShape4
+		NamedMaterial "PBRTMatteMaterial2"
+		Include "__ground1__pPlane4__pPlaneShape4.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |ground1|pPlane4
+		ObjectInstance "|ground1|pPlane4"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group2|seaweed6"
+		# Maya Geometry : |foliage4|kelp|group2|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group2__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group2|seaweed6
+		ObjectInstance "|foliage4|kelp|group2|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group2|seaweed4"
+		# Maya Geometry : |foliage4|kelp|group2|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group2__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group2|seaweed4
+		ObjectInstance "|foliage4|kelp|group2|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group2|seaweed5"
+		# Maya Geometry : |foliage4|kelp|group2|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group2__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group2|seaweed5
+		ObjectInstance "|foliage4|kelp|group2|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group2|seaweed2"
+		# Maya Geometry : |foliage4|kelp|group2|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group2__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group2|seaweed2
+		ObjectInstance "|foliage4|kelp|group2|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group2|seaweed3"
+		# Maya Geometry : |foliage4|kelp|group2|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group2__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group2|seaweed3
+		ObjectInstance "|foliage4|kelp|group2|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group3|seaweed2"
+		# Maya Geometry : |foliage|kelp|group3|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group3__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group3|seaweed2
+		ObjectInstance "|foliage|kelp|group3|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group3|seaweed3"
+		# Maya Geometry : |foliage|kelp|group3|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group3__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group3|seaweed3
+		ObjectInstance "|foliage|kelp|group3|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group3|seaweed4"
+		# Maya Geometry : |foliage|kelp|group3|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group3__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group3|seaweed4
+		ObjectInstance "|foliage|kelp|group3|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group3|seaweed5"
+		# Maya Geometry : |foliage|kelp|group3|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group3__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group3|seaweed5
+		ObjectInstance "|foliage|kelp|group3|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group3|seaweed6"
+		# Maya Geometry : |foliage|kelp|group3|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group3__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group3|seaweed6
+		ObjectInstance "|foliage|kelp|group3|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group6|seaweed2"
+		# Maya Geometry : |foliage4|kelp|group6|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group6__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group6|seaweed2
+		ObjectInstance "|foliage4|kelp|group6|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group2|seaweed6"
+		# Maya Geometry : |foliage|kelp|group2|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group2__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group2|seaweed6
+		ObjectInstance "|foliage|kelp|group2|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group2|seaweed5"
+		# Maya Geometry : |foliage|kelp|group2|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group2__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group2|seaweed5
+		ObjectInstance "|foliage|kelp|group2|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group2|seaweed4"
+		# Maya Geometry : |foliage|kelp|group2|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group2__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group2|seaweed4
+		ObjectInstance "|foliage|kelp|group2|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group2|seaweed3"
+		# Maya Geometry : |foliage|kelp|group2|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group2__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group2|seaweed3
+		ObjectInstance "|foliage|kelp|group2|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group2|seaweed2"
+		# Maya Geometry : |foliage|kelp|group2|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group2__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group2|seaweed2
+		ObjectInstance "|foliage|kelp|group2|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group6|seaweed6"
+		# Maya Geometry : |foliage4|kelp|group6|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group6__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group6|seaweed6
+		ObjectInstance "|foliage4|kelp|group6|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group5|seaweed5"
+		# Maya Geometry : |foliage6|kelp|group5|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group5__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group5|seaweed5
+		ObjectInstance "|foliage6|kelp|group5|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group5|seaweed4"
+		# Maya Geometry : |foliage6|kelp|group5|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group5__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group5|seaweed4
+		ObjectInstance "|foliage6|kelp|group5|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group5|seaweed6"
+		# Maya Geometry : |foliage6|kelp|group5|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group5__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group5|seaweed6
+		ObjectInstance "|foliage6|kelp|group5|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group6|seaweed4"
+		# Maya Geometry : |foliage4|kelp|group6|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group6__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group6|seaweed4
+		ObjectInstance "|foliage4|kelp|group6|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group5|seaweed3"
+		# Maya Geometry : |foliage6|kelp|group5|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group5__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group5|seaweed3
+		ObjectInstance "|foliage6|kelp|group5|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group5|seaweed2"
+		# Maya Geometry : |foliage6|kelp|group5|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group5__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group5|seaweed2
+		ObjectInstance "|foliage6|kelp|group5|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group2|seaweed5"
+		# Maya Geometry : |foliage1|kelp|group2|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group2__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group2|seaweed5
+		ObjectInstance "|foliage1|kelp|group2|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group2|seaweed4"
+		# Maya Geometry : |foliage1|kelp|group2|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group2__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group2|seaweed4
+		ObjectInstance "|foliage1|kelp|group2|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group2|seaweed6"
+		# Maya Geometry : |foliage1|kelp|group2|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group2__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group2|seaweed6
+		ObjectInstance "|foliage1|kelp|group2|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group2|seaweed3"
+		# Maya Geometry : |foliage1|kelp|group2|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group2__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group2|seaweed3
+		ObjectInstance "|foliage1|kelp|group2|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group2|seaweed2"
+		# Maya Geometry : |foliage1|kelp|group2|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group2__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group2|seaweed2
+		ObjectInstance "|foliage1|kelp|group2|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group3|seaweed2"
+		# Maya Geometry : |foliage3|kelp|group3|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group3__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group3|seaweed2
+		ObjectInstance "|foliage3|kelp|group3|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group3|seaweed3"
+		# Maya Geometry : |foliage3|kelp|group3|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group3__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group3|seaweed3
+		ObjectInstance "|foliage3|kelp|group3|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group3|seaweed4"
+		# Maya Geometry : |foliage3|kelp|group3|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group3__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group3|seaweed4
+		ObjectInstance "|foliage3|kelp|group3|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group3|seaweed5"
+		# Maya Geometry : |foliage3|kelp|group3|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group3__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group3|seaweed5
+		ObjectInstance "|foliage3|kelp|group3|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group3|seaweed6"
+		# Maya Geometry : |foliage3|kelp|group3|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group3__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group3|seaweed6
+		ObjectInstance "|foliage3|kelp|group3|seaweed6"
+	AttributeEnd
+
+	AttributeBegin
+		Transform 
+			[656.202170507 0.0 287.391955218 0.0
+			 0.0 1.01568258104 0.0 0.0
+			 -432.030480781 0.0 986.455375893 0.0
+			 244.722087136 196.694457668 -420.0 1.0]
+		# Maya Geometry : |light|lightShape
+		AreaLightSource "diffuse"
+			"rgb scale" [1.0 1.0 1.0]
+			"rgb L" [1.0 1.0 1.0]
+			"integer nsamples" [1]
+		Include "__light__lightShape.pbrt"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|coral|SphereFBXASC046003|SphereFBXASC046002"
+		# Maya Geometry : |foliage3|coral|SphereFBXASC046003|SphereFBXASC046002|SphereFBXASC046002Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__coral__SphereFBXASC046003__SphereFBXASC046002__SphereFBXASC046002Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|coral|SphereFBXASC046003|SphereFBXASC046002
+		ObjectInstance "|foliage3|coral|SphereFBXASC046003|SphereFBXASC046002"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group6|seaweed5"
+		# Maya Geometry : |foliage2|kelp|group6|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group6__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group6|seaweed5
+		ObjectInstance "|foliage2|kelp|group6|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group3|seaweed5"
+		# Maya Geometry : |foliage2|kelp|group3|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group3__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group3|seaweed5
+		ObjectInstance "|foliage2|kelp|group3|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group6|seaweed3"
+		# Maya Geometry : |foliage9|kelp|group6|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group6__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group6|seaweed3
+		ObjectInstance "|foliage9|kelp|group6|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group6|seaweed2"
+		# Maya Geometry : |foliage9|kelp|group6|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group6__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group6|seaweed2
+		ObjectInstance "|foliage9|kelp|group6|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group6|seaweed5"
+		# Maya Geometry : |foliage9|kelp|group6|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group6__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group6|seaweed5
+		ObjectInstance "|foliage9|kelp|group6|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group6|seaweed4"
+		# Maya Geometry : |foliage9|kelp|group6|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group6__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group6|seaweed4
+		ObjectInstance "|foliage9|kelp|group6|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group6|seaweed6"
+		# Maya Geometry : |foliage9|kelp|group6|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group6__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group6|seaweed6
+		ObjectInstance "|foliage9|kelp|group6|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group3|seaweed6"
+		# Maya Geometry : |foliage1|kelp|group3|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group3__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group3|seaweed6
+		ObjectInstance "|foliage1|kelp|group3|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group3|seaweed4"
+		# Maya Geometry : |foliage1|kelp|group3|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group3__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group3|seaweed4
+		ObjectInstance "|foliage1|kelp|group3|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group3|seaweed5"
+		# Maya Geometry : |foliage1|kelp|group3|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group3__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group3|seaweed5
+		ObjectInstance "|foliage1|kelp|group3|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group3|seaweed2"
+		# Maya Geometry : |foliage1|kelp|group3|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group3__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group3|seaweed2
+		ObjectInstance "|foliage1|kelp|group3|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group3|seaweed3"
+		# Maya Geometry : |foliage1|kelp|group3|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group3__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group3|seaweed3
+		ObjectInstance "|foliage1|kelp|group3|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|ground1|pPlane1"
+		# Maya Geometry : |ground1|pPlane1|pPlaneShape1
+		NamedMaterial "PBRTMatteMaterial2"
+		Include "__ground1__pPlane1__pPlaneShape1.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |ground1|pPlane1
+		ObjectInstance "|ground1|pPlane1"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|coral|SphereFBXASC046003"
+		# Maya Geometry : |foliage9|coral|SphereFBXASC046003|SphereFBXASC046003Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__coral__SphereFBXASC046003__SphereFBXASC046003Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|coral|SphereFBXASC046003
+		ObjectInstance "|foliage9|coral|SphereFBXASC046003"
+	AttributeEnd
+
+	ObjectBegin "|ground1|pPlane3"
+		# Maya Geometry : |ground1|pPlane3|pPlaneShape3
+		NamedMaterial "PBRTMatteMaterial2"
+		Include "__ground1__pPlane3__pPlaneShape3.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |ground1|pPlane3
+		ObjectInstance "|ground1|pPlane3"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group5|seaweed3"
+		# Maya Geometry : |foliage2|kelp|group5|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group5__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group5|seaweed3
+		ObjectInstance "|foliage2|kelp|group5|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group5|seaweed2"
+		# Maya Geometry : |foliage2|kelp|group5|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group5__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group5|seaweed2
+		ObjectInstance "|foliage2|kelp|group5|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group6|seaweed3"
+		# Maya Geometry : |foliage|kelp|group6|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group6__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group6|seaweed3
+		ObjectInstance "|foliage|kelp|group6|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group6|seaweed2"
+		# Maya Geometry : |foliage|kelp|group6|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group6__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group6|seaweed2
+		ObjectInstance "|foliage|kelp|group6|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group6|seaweed6"
+		# Maya Geometry : |foliage|kelp|group6|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group6__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group6|seaweed6
+		ObjectInstance "|foliage|kelp|group6|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group6|seaweed5"
+		# Maya Geometry : |foliage|kelp|group6|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group6__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group6|seaweed5
+		ObjectInstance "|foliage|kelp|group6|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group6|seaweed4"
+		# Maya Geometry : |foliage|kelp|group6|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group6__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group6|seaweed4
+		ObjectInstance "|foliage|kelp|group6|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group6|seaweed5"
+		# Maya Geometry : |foliage5|kelp|group6|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group6__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group6|seaweed5
+		ObjectInstance "|foliage5|kelp|group6|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group6|seaweed4"
+		# Maya Geometry : |foliage5|kelp|group6|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group6__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group6|seaweed4
+		ObjectInstance "|foliage5|kelp|group6|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group6|seaweed6"
+		# Maya Geometry : |foliage5|kelp|group6|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group6__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group6|seaweed6
+		ObjectInstance "|foliage5|kelp|group6|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group6|seaweed3"
+		# Maya Geometry : |foliage5|kelp|group6|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group6__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group6|seaweed3
+		ObjectInstance "|foliage5|kelp|group6|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group6|seaweed2"
+		# Maya Geometry : |foliage5|kelp|group6|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group6__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group6|seaweed2
+		ObjectInstance "|foliage5|kelp|group6|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group4|seaweed2"
+		# Maya Geometry : |foliage2|kelp|group4|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group4__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group4|seaweed2
+		ObjectInstance "|foliage2|kelp|group4|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group4|seaweed3"
+		# Maya Geometry : |foliage2|kelp|group4|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group4__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group4|seaweed3
+		ObjectInstance "|foliage2|kelp|group4|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group4|seaweed6"
+		# Maya Geometry : |foliage2|kelp|group4|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group4__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group4|seaweed6
+		ObjectInstance "|foliage2|kelp|group4|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group4|seaweed4"
+		# Maya Geometry : |foliage2|kelp|group4|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group4__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group4|seaweed4
+		ObjectInstance "|foliage2|kelp|group4|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group4|seaweed5"
+		# Maya Geometry : |foliage2|kelp|group4|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group4__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group4|seaweed5
+		ObjectInstance "|foliage2|kelp|group4|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group1|seaweed5"
+		# Maya Geometry : |foliage2|kelp|group1|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group1__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group1|seaweed5
+		ObjectInstance "|foliage2|kelp|group1|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group1|seaweed4"
+		# Maya Geometry : |foliage2|kelp|group1|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group1__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group1|seaweed4
+		ObjectInstance "|foliage2|kelp|group1|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group1|seaweed6"
+		# Maya Geometry : |foliage2|kelp|group1|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group1__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group1|seaweed6
+		ObjectInstance "|foliage2|kelp|group1|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group1|seaweed3"
+		# Maya Geometry : |foliage2|kelp|group1|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group1__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group1|seaweed3
+		ObjectInstance "|foliage2|kelp|group1|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group1|seaweed2"
+		# Maya Geometry : |foliage2|kelp|group1|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group1__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group1|seaweed2
+		ObjectInstance "|foliage2|kelp|group1|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group2|seaweed2"
+		# Maya Geometry : |foliage8|kelp|group2|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group2__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group2|seaweed2
+		ObjectInstance "|foliage8|kelp|group2|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group2|seaweed3"
+		# Maya Geometry : |foliage8|kelp|group2|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group2__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group2|seaweed3
+		ObjectInstance "|foliage8|kelp|group2|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group2|seaweed6"
+		# Maya Geometry : |foliage8|kelp|group2|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group2__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group2|seaweed6
+		ObjectInstance "|foliage8|kelp|group2|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group2|seaweed4"
+		# Maya Geometry : |foliage8|kelp|group2|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group2__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group2|seaweed4
+		ObjectInstance "|foliage8|kelp|group2|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group2|seaweed5"
+		# Maya Geometry : |foliage8|kelp|group2|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group2__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group2|seaweed5
+		ObjectInstance "|foliage8|kelp|group2|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group2|seaweed6"
+		# Maya Geometry : |foliage3|kelp|group2|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group2__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group2|seaweed6
+		ObjectInstance "|foliage3|kelp|group2|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group2|seaweed5"
+		# Maya Geometry : |foliage3|kelp|group2|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group2__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group2|seaweed5
+		ObjectInstance "|foliage3|kelp|group2|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group2|seaweed4"
+		# Maya Geometry : |foliage3|kelp|group2|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group2__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group2|seaweed4
+		ObjectInstance "|foliage3|kelp|group2|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group2|seaweed3"
+		# Maya Geometry : |foliage3|kelp|group2|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group2__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group2|seaweed3
+		ObjectInstance "|foliage3|kelp|group2|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group2|seaweed2"
+		# Maya Geometry : |foliage3|kelp|group2|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group2__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group2|seaweed2
+		ObjectInstance "|foliage3|kelp|group2|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group1|seaweed2"
+		# Maya Geometry : |foliage5|kelp|group1|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group1__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group1|seaweed2
+		ObjectInstance "|foliage5|kelp|group1|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group1|seaweed3"
+		# Maya Geometry : |foliage5|kelp|group1|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group1__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group1|seaweed3
+		ObjectInstance "|foliage5|kelp|group1|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group1|seaweed4"
+		# Maya Geometry : |foliage5|kelp|group1|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group1__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group1|seaweed4
+		ObjectInstance "|foliage5|kelp|group1|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group1|seaweed5"
+		# Maya Geometry : |foliage5|kelp|group1|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group1__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group1|seaweed5
+		ObjectInstance "|foliage5|kelp|group1|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group1|seaweed6"
+		# Maya Geometry : |foliage5|kelp|group1|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group1__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group1|seaweed6
+		ObjectInstance "|foliage5|kelp|group1|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group6|seaweed6"
+		# Maya Geometry : |foliage7|kelp|group6|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group6__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group6|seaweed6
+		ObjectInstance "|foliage7|kelp|group6|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group6|seaweed5"
+		# Maya Geometry : |foliage7|kelp|group6|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group6__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group6|seaweed5
+		ObjectInstance "|foliage7|kelp|group6|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group6|seaweed4"
+		# Maya Geometry : |foliage7|kelp|group6|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group6__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group6|seaweed4
+		ObjectInstance "|foliage7|kelp|group6|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group6|seaweed3"
+		# Maya Geometry : |foliage7|kelp|group6|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group6__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group6|seaweed3
+		ObjectInstance "|foliage7|kelp|group6|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group6|seaweed2"
+		# Maya Geometry : |foliage7|kelp|group6|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group6__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group6|seaweed2
+		ObjectInstance "|foliage7|kelp|group6|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|ground|pPlane4"
+		# Maya Geometry : |ground|pPlane4|pPlaneShape4
+		NamedMaterial "PBRTMatteMaterial2"
+		Include "__ground__pPlane4__pPlaneShape4.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |ground|pPlane4
+		ObjectInstance "|ground|pPlane4"
+	AttributeEnd
+
+	ObjectBegin "|ground|pPlane1"
+		# Maya Geometry : |ground|pPlane1|pPlaneShape1
+		NamedMaterial "PBRTMatteSandMaterial3"
+		Include "__ground__pPlane1__pPlaneShape1.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |ground|pPlane1
+		ObjectInstance "|ground|pPlane1"
+	AttributeEnd
+
+	ObjectBegin "|ground|pPlane2"
+		# Maya Geometry : |ground|pPlane2|pPlaneShape2
+		NamedMaterial "PBRTMatteMaterial2"
+		Include "__ground__pPlane2__pPlaneShape2.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |ground|pPlane2
+		ObjectInstance "|ground|pPlane2"
+	AttributeEnd
+
+	ObjectBegin "|ground|pPlane3"
+		# Maya Geometry : |ground|pPlane3|pPlaneShape3
+		NamedMaterial "PBRTMatteMaterial2"
+		Include "__ground__pPlane3__pPlaneShape3.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |ground|pPlane3
+		ObjectInstance "|ground|pPlane3"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group4|seaweed6"
+		# Maya Geometry : |foliage6|kelp|group4|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group4__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group4|seaweed6
+		ObjectInstance "|foliage6|kelp|group4|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group4|seaweed4"
+		# Maya Geometry : |foliage6|kelp|group4|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group4__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group4|seaweed4
+		ObjectInstance "|foliage6|kelp|group4|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group4|seaweed5"
+		# Maya Geometry : |foliage6|kelp|group4|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group4__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group4|seaweed5
+		ObjectInstance "|foliage6|kelp|group4|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group4|seaweed2"
+		# Maya Geometry : |foliage6|kelp|group4|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group4__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group4|seaweed2
+		ObjectInstance "|foliage6|kelp|group4|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group4|seaweed3"
+		# Maya Geometry : |foliage6|kelp|group4|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group4__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group4|seaweed3
+		ObjectInstance "|foliage6|kelp|group4|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|coral|SphereFBXASC046003|SphereFBXASC046002"
+		# Maya Geometry : |foliage1|coral|SphereFBXASC046003|SphereFBXASC046002|SphereFBXASC046002Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__coral__SphereFBXASC046003__SphereFBXASC046002__SphereFBXASC046002Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|coral|SphereFBXASC046003|SphereFBXASC046002
+		ObjectInstance "|foliage1|coral|SphereFBXASC046003|SphereFBXASC046002"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group4|seaweed6"
+		# Maya Geometry : |foliage9|kelp|group4|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group4__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group4|seaweed6
+		ObjectInstance "|foliage9|kelp|group4|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group4|seaweed5"
+		# Maya Geometry : |foliage9|kelp|group4|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group4__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group4|seaweed5
+		ObjectInstance "|foliage9|kelp|group4|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group4|seaweed4"
+		# Maya Geometry : |foliage9|kelp|group4|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group4__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group4|seaweed4
+		ObjectInstance "|foliage9|kelp|group4|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group4|seaweed3"
+		# Maya Geometry : |foliage9|kelp|group4|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group4__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group4|seaweed3
+		ObjectInstance "|foliage9|kelp|group4|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group4|seaweed2"
+		# Maya Geometry : |foliage9|kelp|group4|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group4__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group4|seaweed2
+		ObjectInstance "|foliage9|kelp|group4|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group1|seaweed6"
+		# Maya Geometry : |foliage8|kelp|group1|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group1__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group1|seaweed6
+		ObjectInstance "|foliage8|kelp|group1|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group1|seaweed5"
+		# Maya Geometry : |foliage8|kelp|group1|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group1__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group1|seaweed5
+		ObjectInstance "|foliage8|kelp|group1|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group1|seaweed4"
+		# Maya Geometry : |foliage8|kelp|group1|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group1__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group1|seaweed4
+		ObjectInstance "|foliage8|kelp|group1|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group1|seaweed3"
+		# Maya Geometry : |foliage8|kelp|group1|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group1__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group1|seaweed3
+		ObjectInstance "|foliage8|kelp|group1|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group1|seaweed2"
+		# Maya Geometry : |foliage8|kelp|group1|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group1__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group1|seaweed2
+		ObjectInstance "|foliage8|kelp|group1|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|coral|SphereFBXASC046003"
+		# Maya Geometry : |foliage2|coral|SphereFBXASC046003|SphereFBXASC046003Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__coral__SphereFBXASC046003__SphereFBXASC046003Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|coral|SphereFBXASC046003
+		ObjectInstance "|foliage2|coral|SphereFBXASC046003"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|coral|SphereFBXASC046001"
+		# Maya Geometry : |foliage2|coral|SphereFBXASC046001|SphereFBXASC046001Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__coral__SphereFBXASC046001__SphereFBXASC046001Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|coral|SphereFBXASC046001
+		ObjectInstance "|foliage2|coral|SphereFBXASC046001"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group2|seaweed3"
+		# Maya Geometry : |foliage7|kelp|group2|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group2__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group2|seaweed3
+		ObjectInstance "|foliage7|kelp|group2|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group2|seaweed2"
+		# Maya Geometry : |foliage7|kelp|group2|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group2__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group2|seaweed2
+		ObjectInstance "|foliage7|kelp|group2|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|fsh|Mesh1"
+		# Maya Geometry : |fsh|Mesh1|Mesh1Shape
+		NamedMaterial "PBRTMetalFishMaterial1"
+		Include "__fsh__Mesh1__Mesh1Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |fsh|Mesh1
+		ObjectInstance "|fsh|Mesh1"
+	AttributeEnd
+
+	ObjectBegin "|fsh|Mesh2"
+		# Maya Geometry : |fsh|Mesh2|Mesh2Shape
+		NamedMaterial "PBRTMetalFishMaterial1"
+		Include "__fsh__Mesh2__Mesh2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |fsh|Mesh2
+		ObjectInstance "|fsh|Mesh2"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group2|seaweed4"
+		# Maya Geometry : |foliage7|kelp|group2|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group2__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group2|seaweed4
+		ObjectInstance "|foliage7|kelp|group2|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group6|seaweed3"
+		# Maya Geometry : |foliage1|kelp|group6|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group6__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group6|seaweed3
+		ObjectInstance "|foliage1|kelp|group6|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group6|seaweed2"
+		# Maya Geometry : |foliage1|kelp|group6|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group6__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group6|seaweed2
+		ObjectInstance "|foliage1|kelp|group6|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group6|seaweed5"
+		# Maya Geometry : |foliage1|kelp|group6|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group6__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group6|seaweed5
+		ObjectInstance "|foliage1|kelp|group6|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group6|seaweed4"
+		# Maya Geometry : |foliage1|kelp|group6|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group6__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group6|seaweed4
+		ObjectInstance "|foliage1|kelp|group6|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group6|seaweed6"
+		# Maya Geometry : |foliage1|kelp|group6|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group6__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group6|seaweed6
+		ObjectInstance "|foliage1|kelp|group6|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|fsh|Mesh"
+		# Maya Geometry : |fsh|Mesh|MeshShape
+		NamedMaterial "PBRTMetalFishMaterial1"
+		Include "__fsh__Mesh__MeshShape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |fsh|Mesh
+		ObjectInstance "|fsh|Mesh"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|coral|SphereFBXASC046003|SphereFBXASC046002"
+		# Maya Geometry : |foliage2|coral|SphereFBXASC046003|SphereFBXASC046002|SphereFBXASC046002Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__coral__SphereFBXASC046003__SphereFBXASC046002__SphereFBXASC046002Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|coral|SphereFBXASC046003|SphereFBXASC046002
+		ObjectInstance "|foliage2|coral|SphereFBXASC046003|SphereFBXASC046002"
+	AttributeEnd
+
+	ObjectBegin "|foliage|coral|SphereFBXASC046003|SphereFBXASC046002"
+		# Maya Geometry : |foliage|coral|SphereFBXASC046003|SphereFBXASC046002|SphereFBXASC046002Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__coral__SphereFBXASC046003__SphereFBXASC046002__SphereFBXASC046002Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|coral|SphereFBXASC046003|SphereFBXASC046002
+		ObjectInstance "|foliage|coral|SphereFBXASC046003|SphereFBXASC046002"
+	AttributeEnd
+
+	ObjectBegin "|coral_8"
+		# Maya Geometry : |coral_8|coral_8Shape
+		NamedMaterial "PBRTMatteCoralMaterial1"
+		Include "__coral_8__coral_8Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |coral_8
+		ObjectInstance "|coral_8"
+	AttributeEnd
+
+	ObjectBegin "|coral_9"
+		# Maya Geometry : |coral_9|coral_9Shape
+		NamedMaterial "PBRTMatteCoralMaterial1"
+		Include "__coral_9__coral_9Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |coral_9
+		ObjectInstance "|coral_9"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group5|seaweed5"
+		# Maya Geometry : |foliage2|kelp|group5|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group5__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group5|seaweed5
+		ObjectInstance "|foliage2|kelp|group5|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|coral_6"
+		# Maya Geometry : |coral_6|coral_6Shape
+		NamedMaterial "PBRTMatteCoralMaterial1"
+		Include "__coral_6__coral_6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |coral_6
+		ObjectInstance "|coral_6"
+	AttributeEnd
+
+	ObjectBegin "|coral_7"
+		# Maya Geometry : |coral_7|coral_7Shape
+		NamedMaterial "PBRTMatteCoralMaterial1"
+		Include "__coral_7__coral_7Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |coral_7
+		ObjectInstance "|coral_7"
+	AttributeEnd
+
+	ObjectBegin "|coral_4"
+		# Maya Geometry : |coral_4|coral_4Shape
+		NamedMaterial "PBRTMatteCoralMaterial1"
+		Include "__coral_4__coral_4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |coral_4
+		ObjectInstance "|coral_4"
+	AttributeEnd
+
+	ObjectBegin "|coral_5"
+		# Maya Geometry : |coral_5|coral_5Shape
+		NamedMaterial "PBRTMatteCoralMaterial1"
+		Include "__coral_5__coral_5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |coral_5
+		ObjectInstance "|coral_5"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group5|seaweed2"
+		# Maya Geometry : |foliage1|kelp|group5|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group5__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group5|seaweed2
+		ObjectInstance "|foliage1|kelp|group5|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group5|seaweed3"
+		# Maya Geometry : |foliage1|kelp|group5|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group5__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group5|seaweed3
+		ObjectInstance "|foliage1|kelp|group5|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group5|seaweed4"
+		# Maya Geometry : |foliage1|kelp|group5|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group5__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group5|seaweed4
+		ObjectInstance "|foliage1|kelp|group5|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group5|seaweed5"
+		# Maya Geometry : |foliage1|kelp|group5|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group5__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group5|seaweed5
+		ObjectInstance "|foliage1|kelp|group5|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group5|seaweed6"
+		# Maya Geometry : |foliage1|kelp|group5|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group5__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group5|seaweed6
+		ObjectInstance "|foliage1|kelp|group5|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group5|seaweed4"
+		# Maya Geometry : |foliage2|kelp|group5|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group5__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group5|seaweed4
+		ObjectInstance "|foliage2|kelp|group5|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|coral_10"
+		# Maya Geometry : |coral_10|coral_10Shape
+		NamedMaterial "PBRTMatteCoralMaterial1"
+		Include "__coral_10__coral_10Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |coral_10
+		ObjectInstance "|coral_10"
+	AttributeEnd
+
+	ObjectBegin "|coral_11"
+		# Maya Geometry : |coral_11|coral_11Shape
+		NamedMaterial "PBRTMatteCoralMaterial1"
+		Include "__coral_11__coral_11Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |coral_11
+		ObjectInstance "|coral_11"
+	AttributeEnd
+
+	ObjectBegin "|coral_12"
+		# Maya Geometry : |coral_12|coral_12Shape
+		NamedMaterial "PBRTMatteCoralMaterial1"
+		Include "__coral_12__coral_12Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |coral_12
+		ObjectInstance "|coral_12"
+	AttributeEnd
+
+	ObjectBegin "|coral_13"
+		# Maya Geometry : |coral_13|coral_13Shape
+		NamedMaterial "PBRTMatteCoralMaterial1"
+		Include "__coral_13__coral_13Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |coral_13
+		ObjectInstance "|coral_13"
+	AttributeEnd
+
+	ObjectBegin "|coral_14"
+		# Maya Geometry : |coral_14|coral_14Shape
+		NamedMaterial "PBRTMatteCoralMaterial1"
+		Include "__coral_14__coral_14Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |coral_14
+		ObjectInstance "|coral_14"
+	AttributeEnd
+
+	ObjectBegin "|coral_15"
+		# Maya Geometry : |coral_15|coral_15Shape
+		NamedMaterial "PBRTMatteCoralMaterial1"
+		Include "__coral_15__coral_15Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |coral_15
+		ObjectInstance "|coral_15"
+	AttributeEnd
+
+	ObjectBegin "|coral_16"
+		# Maya Geometry : |coral_16|coral_16Shape
+		NamedMaterial "PBRTMatteCoralMaterial1"
+		Include "__coral_16__coral_16Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |coral_16
+		ObjectInstance "|coral_16"
+	AttributeEnd
+
+	ObjectBegin "|coral_17"
+		# Maya Geometry : |coral_17|coral_17Shape
+		NamedMaterial "PBRTMatteCoralMaterial1"
+		Include "__coral_17__coral_17Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |coral_17
+		ObjectInstance "|coral_17"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group1|seaweed2"
+		# Maya Geometry : |foliage3|kelp|group1|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group1__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group1|seaweed2
+		ObjectInstance "|foliage3|kelp|group1|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group1|seaweed3"
+		# Maya Geometry : |foliage3|kelp|group1|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group1__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group1|seaweed3
+		ObjectInstance "|foliage3|kelp|group1|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group1|seaweed6"
+		# Maya Geometry : |foliage3|kelp|group1|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group1__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group1|seaweed6
+		ObjectInstance "|foliage3|kelp|group1|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group1|seaweed4"
+		# Maya Geometry : |foliage3|kelp|group1|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group1__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group1|seaweed4
+		ObjectInstance "|foliage3|kelp|group1|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group1|seaweed5"
+		# Maya Geometry : |foliage3|kelp|group1|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group1__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group1|seaweed5
+		ObjectInstance "|foliage3|kelp|group1|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group5|seaweed2"
+		# Maya Geometry : |foliage7|kelp|group5|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group5__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group5|seaweed2
+		ObjectInstance "|foliage7|kelp|group5|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group5|seaweed3"
+		# Maya Geometry : |foliage7|kelp|group5|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group5__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group5|seaweed3
+		ObjectInstance "|foliage7|kelp|group5|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group5|seaweed6"
+		# Maya Geometry : |foliage7|kelp|group5|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group5__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group5|seaweed6
+		ObjectInstance "|foliage7|kelp|group5|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group5|seaweed4"
+		# Maya Geometry : |foliage7|kelp|group5|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group5__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group5|seaweed4
+		ObjectInstance "|foliage7|kelp|group5|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group5|seaweed5"
+		# Maya Geometry : |foliage7|kelp|group5|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group5__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group5|seaweed5
+		ObjectInstance "|foliage7|kelp|group5|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group4|seaweed3"
+		# Maya Geometry : |foliage7|kelp|group4|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group4__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group4|seaweed3
+		ObjectInstance "|foliage7|kelp|group4|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group4|seaweed2"
+		# Maya Geometry : |foliage7|kelp|group4|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group4__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group4|seaweed2
+		ObjectInstance "|foliage7|kelp|group4|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group4|seaweed5"
+		# Maya Geometry : |foliage7|kelp|group4|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group4__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group4|seaweed5
+		ObjectInstance "|foliage7|kelp|group4|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group4|seaweed4"
+		# Maya Geometry : |foliage7|kelp|group4|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group4__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group4|seaweed4
+		ObjectInstance "|foliage7|kelp|group4|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group4|seaweed6"
+		# Maya Geometry : |foliage7|kelp|group4|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group4__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group4|seaweed6
+		ObjectInstance "|foliage7|kelp|group4|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group1|seaweed6"
+		# Maya Geometry : |foliage6|kelp|group1|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group1__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group1|seaweed6
+		ObjectInstance "|foliage6|kelp|group1|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|coral|SphereFBXASC046003"
+		# Maya Geometry : |foliage5|coral|SphereFBXASC046003|SphereFBXASC046003Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__coral__SphereFBXASC046003__SphereFBXASC046003Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|coral|SphereFBXASC046003
+		ObjectInstance "|foliage5|coral|SphereFBXASC046003"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|coral|SphereFBXASC046001"
+		# Maya Geometry : |foliage5|coral|SphereFBXASC046001|SphereFBXASC046001Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__coral__SphereFBXASC046001__SphereFBXASC046001Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|coral|SphereFBXASC046001
+		ObjectInstance "|foliage5|coral|SphereFBXASC046001"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group2|seaweed3"
+		# Maya Geometry : |foliage5|kelp|group2|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group2__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group2|seaweed3
+		ObjectInstance "|foliage5|kelp|group2|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group2|seaweed2"
+		# Maya Geometry : |foliage5|kelp|group2|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group2__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group2|seaweed2
+		ObjectInstance "|foliage5|kelp|group2|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group2|seaweed5"
+		# Maya Geometry : |foliage5|kelp|group2|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group2__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group2|seaweed5
+		ObjectInstance "|foliage5|kelp|group2|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group2|seaweed4"
+		# Maya Geometry : |foliage5|kelp|group2|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group2__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group2|seaweed4
+		ObjectInstance "|foliage5|kelp|group2|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group2|seaweed6"
+		# Maya Geometry : |foliage5|kelp|group2|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group2__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group2|seaweed6
+		ObjectInstance "|foliage5|kelp|group2|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group6|seaweed4"
+		# Maya Geometry : |foliage6|kelp|group6|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group6__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group6|seaweed4
+		ObjectInstance "|foliage6|kelp|group6|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group6|seaweed5"
+		# Maya Geometry : |foliage6|kelp|group6|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group6__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group6|seaweed5
+		ObjectInstance "|foliage6|kelp|group6|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group6|seaweed6"
+		# Maya Geometry : |foliage6|kelp|group6|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group6__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group6|seaweed6
+		ObjectInstance "|foliage6|kelp|group6|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group6|seaweed2"
+		# Maya Geometry : |foliage6|kelp|group6|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group6__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group6|seaweed2
+		ObjectInstance "|foliage6|kelp|group6|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group6|seaweed3"
+		# Maya Geometry : |foliage6|kelp|group6|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group6__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group6|seaweed3
+		ObjectInstance "|foliage6|kelp|group6|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|coral|SphereFBXASC046003|SphereFBXASC046002"
+		# Maya Geometry : |foliage9|coral|SphereFBXASC046003|SphereFBXASC046002|SphereFBXASC046002Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__coral__SphereFBXASC046003__SphereFBXASC046002__SphereFBXASC046002Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|coral|SphereFBXASC046003|SphereFBXASC046002
+		ObjectInstance "|foliage9|coral|SphereFBXASC046003|SphereFBXASC046002"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group6|seaweed3"
+		# Maya Geometry : |foliage3|kelp|group6|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group6__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group6|seaweed3
+		ObjectInstance "|foliage3|kelp|group6|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group6|seaweed2"
+		# Maya Geometry : |foliage3|kelp|group6|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group6__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group6|seaweed2
+		ObjectInstance "|foliage3|kelp|group6|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group6|seaweed6"
+		# Maya Geometry : |foliage3|kelp|group6|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group6__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group6|seaweed6
+		ObjectInstance "|foliage3|kelp|group6|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group6|seaweed5"
+		# Maya Geometry : |foliage3|kelp|group6|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group6__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group6|seaweed5
+		ObjectInstance "|foliage3|kelp|group6|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group6|seaweed4"
+		# Maya Geometry : |foliage3|kelp|group6|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group6__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group6|seaweed4
+		ObjectInstance "|foliage3|kelp|group6|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group1|seaweed6"
+		# Maya Geometry : |foliage7|kelp|group1|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group1__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group1|seaweed6
+		ObjectInstance "|foliage7|kelp|group1|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group1|seaweed4"
+		# Maya Geometry : |foliage7|kelp|group1|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group1__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group1|seaweed4
+		ObjectInstance "|foliage7|kelp|group1|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group1|seaweed5"
+		# Maya Geometry : |foliage7|kelp|group1|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group1__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group1|seaweed5
+		ObjectInstance "|foliage7|kelp|group1|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group1|seaweed2"
+		# Maya Geometry : |foliage7|kelp|group1|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group1__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group1|seaweed2
+		ObjectInstance "|foliage7|kelp|group1|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group1|seaweed3"
+		# Maya Geometry : |foliage7|kelp|group1|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group1__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group1|seaweed3
+		ObjectInstance "|foliage7|kelp|group1|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group3|seaweed2"
+		# Maya Geometry : |foliage5|kelp|group3|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group3__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group3|seaweed2
+		ObjectInstance "|foliage5|kelp|group3|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group5|seaweed5"
+		# Maya Geometry : |foliage5|kelp|group5|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group5__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group5|seaweed5
+		ObjectInstance "|foliage5|kelp|group5|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group5|seaweed6"
+		# Maya Geometry : |foliage5|kelp|group5|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group5__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group5|seaweed6
+		ObjectInstance "|foliage5|kelp|group5|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group3|seaweed6"
+		# Maya Geometry : |foliage5|kelp|group3|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group3__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group3|seaweed6
+		ObjectInstance "|foliage5|kelp|group3|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group3|seaweed4"
+		# Maya Geometry : |foliage5|kelp|group3|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group3__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group3|seaweed4
+		ObjectInstance "|foliage5|kelp|group3|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group5|seaweed3"
+		# Maya Geometry : |foliage5|kelp|group5|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group5__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group5|seaweed3
+		ObjectInstance "|foliage5|kelp|group5|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group1|seaweed4"
+		# Maya Geometry : |foliage9|kelp|group1|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group1__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group1|seaweed4
+		ObjectInstance "|foliage9|kelp|group1|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group1|seaweed5"
+		# Maya Geometry : |foliage9|kelp|group1|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group1__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group1|seaweed5
+		ObjectInstance "|foliage9|kelp|group1|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group1|seaweed6"
+		# Maya Geometry : |foliage9|kelp|group1|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group1__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group1|seaweed6
+		ObjectInstance "|foliage9|kelp|group1|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group1|seaweed2"
+		# Maya Geometry : |foliage9|kelp|group1|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group1__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group1|seaweed2
+		ObjectInstance "|foliage9|kelp|group1|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group1|seaweed3"
+		# Maya Geometry : |foliage9|kelp|group1|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group1__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group1|seaweed3
+		ObjectInstance "|foliage9|kelp|group1|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group5|seaweed2"
+		# Maya Geometry : |foliage9|kelp|group5|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group5__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group5|seaweed2
+		ObjectInstance "|foliage9|kelp|group5|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group5|seaweed3"
+		# Maya Geometry : |foliage9|kelp|group5|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group5__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group5|seaweed3
+		ObjectInstance "|foliage9|kelp|group5|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group5|seaweed4"
+		# Maya Geometry : |foliage9|kelp|group5|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group5__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group5|seaweed4
+		ObjectInstance "|foliage9|kelp|group5|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|coral|SphereFBXASC046001"
+		# Maya Geometry : |foliage8|coral|SphereFBXASC046001|SphereFBXASC046001Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__coral__SphereFBXASC046001__SphereFBXASC046001Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|coral|SphereFBXASC046001
+		ObjectInstance "|foliage8|coral|SphereFBXASC046001"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group5|seaweed6"
+		# Maya Geometry : |foliage9|kelp|group5|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group5__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group5|seaweed6
+		ObjectInstance "|foliage9|kelp|group5|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|coral|SphereFBXASC046003"
+		# Maya Geometry : |foliage8|coral|SphereFBXASC046003|SphereFBXASC046003Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__coral__SphereFBXASC046003__SphereFBXASC046003Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|coral|SphereFBXASC046003
+		ObjectInstance "|foliage8|coral|SphereFBXASC046003"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group3|seaweed6"
+		# Maya Geometry : |foliage6|kelp|group3|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group3__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group3|seaweed6
+		ObjectInstance "|foliage6|kelp|group3|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group3|seaweed5"
+		# Maya Geometry : |foliage6|kelp|group3|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group3__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group3|seaweed5
+		ObjectInstance "|foliage6|kelp|group3|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group3|seaweed4"
+		# Maya Geometry : |foliage6|kelp|group3|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group3__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group3|seaweed4
+		ObjectInstance "|foliage6|kelp|group3|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group3|seaweed3"
+		# Maya Geometry : |foliage6|kelp|group3|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group3__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group3|seaweed3
+		ObjectInstance "|foliage6|kelp|group3|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group3|seaweed2"
+		# Maya Geometry : |foliage6|kelp|group3|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group3__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group3|seaweed2
+		ObjectInstance "|foliage6|kelp|group3|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group5|seaweed3"
+		# Maya Geometry : |foliage8|kelp|group5|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group5__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group5|seaweed3
+		ObjectInstance "|foliage8|kelp|group5|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group5|seaweed2"
+		# Maya Geometry : |foliage8|kelp|group5|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group5__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group5|seaweed2
+		ObjectInstance "|foliage8|kelp|group5|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group5|seaweed6"
+		# Maya Geometry : |foliage8|kelp|group5|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group5__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group5|seaweed6
+		ObjectInstance "|foliage8|kelp|group5|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group5|seaweed5"
+		# Maya Geometry : |foliage8|kelp|group5|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group5__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group5|seaweed5
+		ObjectInstance "|foliage8|kelp|group5|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group5|seaweed4"
+		# Maya Geometry : |foliage8|kelp|group5|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group5__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group5|seaweed4
+		ObjectInstance "|foliage8|kelp|group5|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|coral|SphereFBXASC046001"
+		# Maya Geometry : |foliage7|coral|SphereFBXASC046001|SphereFBXASC046001Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__coral__SphereFBXASC046001__SphereFBXASC046001Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|coral|SphereFBXASC046001
+		ObjectInstance "|foliage7|coral|SphereFBXASC046001"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group6|seaweed3"
+		# Maya Geometry : |foliage4|kelp|group6|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group6__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group6|seaweed3
+		ObjectInstance "|foliage4|kelp|group6|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|coral|SphereFBXASC046003"
+		# Maya Geometry : |foliage7|coral|SphereFBXASC046003|SphereFBXASC046003Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__coral__SphereFBXASC046003__SphereFBXASC046003Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|coral|SphereFBXASC046003
+		ObjectInstance "|foliage7|coral|SphereFBXASC046003"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|coral|SphereFBXASC046001"
+		# Maya Geometry : |foliage3|coral|SphereFBXASC046001|SphereFBXASC046001Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__coral__SphereFBXASC046001__SphereFBXASC046001Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|coral|SphereFBXASC046001
+		ObjectInstance "|foliage3|coral|SphereFBXASC046001"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|coral|SphereFBXASC046003"
+		# Maya Geometry : |foliage3|coral|SphereFBXASC046003|SphereFBXASC046003Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__coral__SphereFBXASC046003__SphereFBXASC046003Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|coral|SphereFBXASC046003
+		ObjectInstance "|foliage3|coral|SphereFBXASC046003"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group6|seaweed5"
+		# Maya Geometry : |foliage4|kelp|group6|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group6__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group6|seaweed5
+		ObjectInstance "|foliage4|kelp|group6|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group1|seaweed4"
+		# Maya Geometry : |foliage1|kelp|group1|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group1__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group1|seaweed4
+		ObjectInstance "|foliage1|kelp|group1|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group1|seaweed5"
+		# Maya Geometry : |foliage1|kelp|group1|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group1__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group1|seaweed5
+		ObjectInstance "|foliage1|kelp|group1|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group1|seaweed6"
+		# Maya Geometry : |foliage1|kelp|group1|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group1__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group1|seaweed6
+		ObjectInstance "|foliage1|kelp|group1|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group1|seaweed2"
+		# Maya Geometry : |foliage1|kelp|group1|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group1__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group1|seaweed2
+		ObjectInstance "|foliage1|kelp|group1|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group1|seaweed3"
+		# Maya Geometry : |foliage1|kelp|group1|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group1__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group1|seaweed3
+		ObjectInstance "|foliage1|kelp|group1|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|coral|SphereFBXASC046003|SphereFBXASC046002"
+		# Maya Geometry : |foliage6|coral|SphereFBXASC046003|SphereFBXASC046002|SphereFBXASC046002Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__coral__SphereFBXASC046003__SphereFBXASC046002__SphereFBXASC046002Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|coral|SphereFBXASC046003|SphereFBXASC046002
+		ObjectInstance "|foliage6|coral|SphereFBXASC046003|SphereFBXASC046002"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group2|seaweed4"
+		# Maya Geometry : |foliage2|kelp|group2|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group2__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group2|seaweed4
+		ObjectInstance "|foliage2|kelp|group2|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group2|seaweed5"
+		# Maya Geometry : |foliage2|kelp|group2|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group2__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group2|seaweed5
+		ObjectInstance "|foliage2|kelp|group2|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group2|seaweed6"
+		# Maya Geometry : |foliage2|kelp|group2|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group2__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group2|seaweed6
+		ObjectInstance "|foliage2|kelp|group2|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group2|seaweed2"
+		# Maya Geometry : |foliage2|kelp|group2|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group2__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group2|seaweed2
+		ObjectInstance "|foliage2|kelp|group2|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group2|seaweed3"
+		# Maya Geometry : |foliage2|kelp|group2|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group2__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group2|seaweed3
+		ObjectInstance "|foliage2|kelp|group2|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|coral|SphereFBXASC046003|SphereFBXASC046002"
+		# Maya Geometry : |foliage7|coral|SphereFBXASC046003|SphereFBXASC046002|SphereFBXASC046002Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__coral__SphereFBXASC046003__SphereFBXASC046002__SphereFBXASC046002Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|coral|SphereFBXASC046003|SphereFBXASC046002
+		ObjectInstance "|foliage7|coral|SphereFBXASC046003|SphereFBXASC046002"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group1|seaweed3"
+		# Maya Geometry : |foliage6|kelp|group1|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group1__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group1|seaweed3
+		ObjectInstance "|foliage6|kelp|group1|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group1|seaweed2"
+		# Maya Geometry : |foliage6|kelp|group1|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group1__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group1|seaweed2
+		ObjectInstance "|foliage6|kelp|group1|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group1|seaweed5"
+		# Maya Geometry : |foliage6|kelp|group1|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group1__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group1|seaweed5
+		ObjectInstance "|foliage6|kelp|group1|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group1|seaweed4"
+		# Maya Geometry : |foliage6|kelp|group1|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group1__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group1|seaweed4
+		ObjectInstance "|foliage6|kelp|group1|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|coral|SphereFBXASC046003|SphereFBXASC046002"
+		# Maya Geometry : |foliage5|coral|SphereFBXASC046003|SphereFBXASC046002|SphereFBXASC046002Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__coral__SphereFBXASC046003__SphereFBXASC046002__SphereFBXASC046002Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|coral|SphereFBXASC046003|SphereFBXASC046002
+		ObjectInstance "|foliage5|coral|SphereFBXASC046003|SphereFBXASC046002"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group3|seaweed6"
+		# Maya Geometry : |foliage9|kelp|group3|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group3__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group3|seaweed6
+		ObjectInstance "|foliage9|kelp|group3|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group3|seaweed4"
+		# Maya Geometry : |foliage9|kelp|group3|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group3__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group3|seaweed4
+		ObjectInstance "|foliage9|kelp|group3|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group3|seaweed5"
+		# Maya Geometry : |foliage9|kelp|group3|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group3__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group3|seaweed5
+		ObjectInstance "|foliage9|kelp|group3|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group3|seaweed2"
+		# Maya Geometry : |foliage9|kelp|group3|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group3__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group3|seaweed2
+		ObjectInstance "|foliage9|kelp|group3|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group3|seaweed3"
+		# Maya Geometry : |foliage9|kelp|group3|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group3__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group3|seaweed3
+		ObjectInstance "|foliage9|kelp|group3|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group4|seaweed3"
+		# Maya Geometry : |foliage|kelp|group4|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group4__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group4|seaweed3
+		ObjectInstance "|foliage|kelp|group4|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group4|seaweed2"
+		# Maya Geometry : |foliage|kelp|group4|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group4__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group4|seaweed2
+		ObjectInstance "|foliage|kelp|group4|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group4|seaweed5"
+		# Maya Geometry : |foliage|kelp|group4|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group4__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group4|seaweed5
+		ObjectInstance "|foliage|kelp|group4|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group4|seaweed4"
+		# Maya Geometry : |foliage|kelp|group4|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group4__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group4|seaweed4
+		ObjectInstance "|foliage|kelp|group4|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group4|seaweed6"
+		# Maya Geometry : |foliage|kelp|group4|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group4__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group4|seaweed6
+		ObjectInstance "|foliage|kelp|group4|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group2|seaweed5"
+		# Maya Geometry : |foliage9|kelp|group2|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group2__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group2|seaweed5
+		ObjectInstance "|foliage9|kelp|group2|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group2|seaweed4"
+		# Maya Geometry : |foliage9|kelp|group2|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group2__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group2|seaweed4
+		ObjectInstance "|foliage9|kelp|group2|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group2|seaweed6"
+		# Maya Geometry : |foliage9|kelp|group2|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group2__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group2|seaweed6
+		ObjectInstance "|foliage9|kelp|group2|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group2|seaweed3"
+		# Maya Geometry : |foliage9|kelp|group2|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group2__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group2|seaweed3
+		ObjectInstance "|foliage9|kelp|group2|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group2|seaweed2"
+		# Maya Geometry : |foliage9|kelp|group2|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group2__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group2|seaweed2
+		ObjectInstance "|foliage9|kelp|group2|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group5|seaweed6"
+		# Maya Geometry : |foliage4|kelp|group5|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group5__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group5|seaweed6
+		ObjectInstance "|foliage4|kelp|group5|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group5|seaweed5"
+		# Maya Geometry : |foliage4|kelp|group5|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group5__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group5|seaweed5
+		ObjectInstance "|foliage4|kelp|group5|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group5|seaweed4"
+		# Maya Geometry : |foliage4|kelp|group5|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group5__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group5|seaweed4
+		ObjectInstance "|foliage4|kelp|group5|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group5|seaweed3"
+		# Maya Geometry : |foliage4|kelp|group5|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group5__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group5|seaweed3
+		ObjectInstance "|foliage4|kelp|group5|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group5|seaweed2"
+		# Maya Geometry : |foliage4|kelp|group5|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group5__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group5|seaweed2
+		ObjectInstance "|foliage4|kelp|group5|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|root|node_id10"
+		# Maya Geometry : |root|node_id10|node_id10Shape
+		NamedMaterial "PBRTTranslucentMaterial1"
+		Include "__root__node_id10__node_id10Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |root|node_id10
+		ObjectInstance "|root|node_id10"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|coral|SphereFBXASC046003|SphereFBXASC046002"
+		# Maya Geometry : |foliage4|coral|SphereFBXASC046003|SphereFBXASC046002|SphereFBXASC046002Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__coral__SphereFBXASC046003__SphereFBXASC046002__SphereFBXASC046002Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|coral|SphereFBXASC046003|SphereFBXASC046002
+		ObjectInstance "|foliage4|coral|SphereFBXASC046003|SphereFBXASC046002"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group4|seaweed6"
+		# Maya Geometry : |foliage1|kelp|group4|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group4__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group4|seaweed6
+		ObjectInstance "|foliage1|kelp|group4|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group4|seaweed5"
+		# Maya Geometry : |foliage1|kelp|group4|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group4__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group4|seaweed5
+		ObjectInstance "|foliage1|kelp|group4|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group4|seaweed4"
+		# Maya Geometry : |foliage1|kelp|group4|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group4__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group4|seaweed4
+		ObjectInstance "|foliage1|kelp|group4|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group4|seaweed3"
+		# Maya Geometry : |foliage1|kelp|group4|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group4__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group4|seaweed3
+		ObjectInstance "|foliage1|kelp|group4|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|kelp|group4|seaweed2"
+		# Maya Geometry : |foliage1|kelp|group4|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__kelp__group4__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|kelp|group4|seaweed2
+		ObjectInstance "|foliage1|kelp|group4|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group3|seaweed5"
+		# Maya Geometry : |foliage4|kelp|group3|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group3__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group3|seaweed5
+		ObjectInstance "|foliage4|kelp|group3|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group3|seaweed4"
+		# Maya Geometry : |foliage4|kelp|group3|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group3__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group3|seaweed4
+		ObjectInstance "|foliage4|kelp|group3|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group3|seaweed6"
+		# Maya Geometry : |foliage4|kelp|group3|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group3__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group3|seaweed6
+		ObjectInstance "|foliage4|kelp|group3|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group3|seaweed3"
+		# Maya Geometry : |foliage4|kelp|group3|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group3__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group3|seaweed3
+		ObjectInstance "|foliage4|kelp|group3|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group3|seaweed2"
+		# Maya Geometry : |foliage4|kelp|group3|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group3__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group3|seaweed2
+		ObjectInstance "|foliage4|kelp|group3|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group4|seaweed2"
+		# Maya Geometry : |foliage4|kelp|group4|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group4__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group4|seaweed2
+		ObjectInstance "|foliage4|kelp|group4|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group4|seaweed3"
+		# Maya Geometry : |foliage4|kelp|group4|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group4__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group4|seaweed3
+		ObjectInstance "|foliage4|kelp|group4|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group4|seaweed4"
+		# Maya Geometry : |foliage4|kelp|group4|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group4__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group4|seaweed4
+		ObjectInstance "|foliage4|kelp|group4|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group4|seaweed5"
+		# Maya Geometry : |foliage4|kelp|group4|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group4__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group4|seaweed5
+		ObjectInstance "|foliage4|kelp|group4|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group4|seaweed6"
+		# Maya Geometry : |foliage4|kelp|group4|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group4__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group4|seaweed6
+		ObjectInstance "|foliage4|kelp|group4|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group5|seaweed6"
+		# Maya Geometry : |foliage2|kelp|group5|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group5__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group5|seaweed6
+		ObjectInstance "|foliage2|kelp|group5|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group4|seaweed3"
+		# Maya Geometry : |foliage5|kelp|group4|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group4__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group4|seaweed3
+		ObjectInstance "|foliage5|kelp|group4|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group4|seaweed2"
+		# Maya Geometry : |foliage5|kelp|group4|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group4__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group4|seaweed2
+		ObjectInstance "|foliage5|kelp|group4|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group4|seaweed6"
+		# Maya Geometry : |foliage5|kelp|group4|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group4__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group4|seaweed6
+		ObjectInstance "|foliage5|kelp|group4|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group4|seaweed5"
+		# Maya Geometry : |foliage5|kelp|group4|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group4__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group4|seaweed5
+		ObjectInstance "|foliage5|kelp|group4|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group4|seaweed4"
+		# Maya Geometry : |foliage5|kelp|group4|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group4__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group4|seaweed4
+		ObjectInstance "|foliage5|kelp|group4|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group6|seaweed6"
+		# Maya Geometry : |foliage8|kelp|group6|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group6__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group6|seaweed6
+		ObjectInstance "|foliage8|kelp|group6|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group6|seaweed4"
+		# Maya Geometry : |foliage8|kelp|group6|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group6__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group6|seaweed4
+		ObjectInstance "|foliage8|kelp|group6|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group6|seaweed5"
+		# Maya Geometry : |foliage8|kelp|group6|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group6__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group6|seaweed5
+		ObjectInstance "|foliage8|kelp|group6|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group6|seaweed2"
+		# Maya Geometry : |foliage8|kelp|group6|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group6__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group6|seaweed2
+		ObjectInstance "|foliage8|kelp|group6|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group6|seaweed3"
+		# Maya Geometry : |foliage8|kelp|group6|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group6__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group6|seaweed3
+		ObjectInstance "|foliage8|kelp|group6|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group2|seaweed2"
+		# Maya Geometry : |foliage6|kelp|group2|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group2__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group2|seaweed2
+		ObjectInstance "|foliage6|kelp|group2|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group2|seaweed3"
+		# Maya Geometry : |foliage6|kelp|group2|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group2__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group2|seaweed3
+		ObjectInstance "|foliage6|kelp|group2|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group2|seaweed4"
+		# Maya Geometry : |foliage6|kelp|group2|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group2__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group2|seaweed4
+		ObjectInstance "|foliage6|kelp|group2|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group2|seaweed5"
+		# Maya Geometry : |foliage6|kelp|group2|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group2__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group2|seaweed5
+		ObjectInstance "|foliage6|kelp|group2|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|kelp|group2|seaweed6"
+		# Maya Geometry : |foliage6|kelp|group2|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__kelp__group2__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|kelp|group2|seaweed6
+		ObjectInstance "|foliage6|kelp|group2|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|coral|SphereFBXASC046003"
+		# Maya Geometry : |foliage1|coral|SphereFBXASC046003|SphereFBXASC046003Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__coral__SphereFBXASC046003__SphereFBXASC046003Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|coral|SphereFBXASC046003
+		ObjectInstance "|foliage1|coral|SphereFBXASC046003"
+	AttributeEnd
+
+	ObjectBegin "|foliage1|coral|SphereFBXASC046001"
+		# Maya Geometry : |foliage1|coral|SphereFBXASC046001|SphereFBXASC046001Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage1__coral__SphereFBXASC046001__SphereFBXASC046001Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage1|coral|SphereFBXASC046001
+		ObjectInstance "|foliage1|coral|SphereFBXASC046001"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group3|seaweed4"
+		# Maya Geometry : |foliage7|kelp|group3|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group3__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group3|seaweed4
+		ObjectInstance "|foliage7|kelp|group3|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group3|seaweed5"
+		# Maya Geometry : |foliage7|kelp|group3|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group3__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group3|seaweed5
+		ObjectInstance "|foliage7|kelp|group3|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group3|seaweed6"
+		# Maya Geometry : |foliage7|kelp|group3|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group3__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group3|seaweed6
+		ObjectInstance "|foliage7|kelp|group3|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group3|seaweed2"
+		# Maya Geometry : |foliage7|kelp|group3|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group3__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group3|seaweed2
+		ObjectInstance "|foliage7|kelp|group3|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group3|seaweed3"
+		# Maya Geometry : |foliage7|kelp|group3|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group3__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group3|seaweed3
+		ObjectInstance "|foliage7|kelp|group3|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|background"
+		# Maya Geometry : |background|backgroundShape
+		NamedMaterial "PBRTDisneyBackgroundMaterial1"
+		Include "__background__backgroundShape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |background
+		ObjectInstance "|background"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group1|seaweed3"
+		# Maya Geometry : |foliage4|kelp|group1|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group1__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group1|seaweed3
+		ObjectInstance "|foliage4|kelp|group1|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group1|seaweed2"
+		# Maya Geometry : |foliage4|kelp|group1|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group1__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group1|seaweed2
+		ObjectInstance "|foliage4|kelp|group1|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group1|seaweed6"
+		# Maya Geometry : |foliage4|kelp|group1|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group1__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group1|seaweed6
+		ObjectInstance "|foliage4|kelp|group1|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group1|seaweed5"
+		# Maya Geometry : |foliage4|kelp|group1|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group1__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group1|seaweed5
+		ObjectInstance "|foliage4|kelp|group1|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage4|kelp|group1|seaweed4"
+		# Maya Geometry : |foliage4|kelp|group1|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage4__kelp__group1__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage4|kelp|group1|seaweed4
+		ObjectInstance "|foliage4|kelp|group1|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|fsh|Rudd_Fish:Mesh"
+		# Maya Geometry : |fsh|Rudd_Fish:Mesh|Rudd_Fish:MeshShape
+		NamedMaterial "PBRTMetalFishMaterial1"
+		Include "__fsh__Rudd_Fish__Mesh__Rudd_Fish__MeshShape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |fsh|Rudd_Fish:Mesh
+		ObjectInstance "|fsh|Rudd_Fish:Mesh"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group3|seaweed3"
+		# Maya Geometry : |foliage2|kelp|group3|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group3__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group3|seaweed3
+		ObjectInstance "|foliage2|kelp|group3|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group3|seaweed2"
+		# Maya Geometry : |foliage2|kelp|group3|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group3__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group3|seaweed2
+		ObjectInstance "|foliage2|kelp|group3|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group6|seaweed2"
+		# Maya Geometry : |foliage2|kelp|group6|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group6__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group6|seaweed2
+		ObjectInstance "|foliage2|kelp|group6|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group6|seaweed3"
+		# Maya Geometry : |foliage2|kelp|group6|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group6__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group6|seaweed3
+		ObjectInstance "|foliage2|kelp|group6|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group6|seaweed4"
+		# Maya Geometry : |foliage2|kelp|group6|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group6__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group6|seaweed4
+		ObjectInstance "|foliage2|kelp|group6|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group3|seaweed6"
+		# Maya Geometry : |foliage2|kelp|group3|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group3__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group3|seaweed6
+		ObjectInstance "|foliage2|kelp|group3|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group6|seaweed6"
+		# Maya Geometry : |foliage2|kelp|group6|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group6__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group6|seaweed6
+		ObjectInstance "|foliage2|kelp|group6|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage2|kelp|group3|seaweed4"
+		# Maya Geometry : |foliage2|kelp|group3|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage2__kelp__group3__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage2|kelp|group3|seaweed4
+		ObjectInstance "|foliage2|kelp|group3|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group5|seaweed6"
+		# Maya Geometry : |foliage3|kelp|group5|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group5__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group5|seaweed6
+		ObjectInstance "|foliage3|kelp|group5|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group5|seaweed4"
+		# Maya Geometry : |foliage3|kelp|group5|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group5__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group5|seaweed4
+		ObjectInstance "|foliage3|kelp|group5|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group5|seaweed5"
+		# Maya Geometry : |foliage3|kelp|group5|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group5__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group5|seaweed5
+		ObjectInstance "|foliage3|kelp|group5|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group5|seaweed2"
+		# Maya Geometry : |foliage3|kelp|group5|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group5__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group5|seaweed2
+		ObjectInstance "|foliage3|kelp|group5|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group5|seaweed3"
+		# Maya Geometry : |foliage3|kelp|group5|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group5__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group5|seaweed3
+		ObjectInstance "|foliage3|kelp|group5|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|coral|SphereFBXASC046001"
+		# Maya Geometry : |foliage9|coral|SphereFBXASC046001|SphereFBXASC046001Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__coral__SphereFBXASC046001__SphereFBXASC046001Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|coral|SphereFBXASC046001
+		ObjectInstance "|foliage9|coral|SphereFBXASC046001"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group5|seaweed4"
+		# Maya Geometry : |foliage5|kelp|group5|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group5__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group5|seaweed4
+		ObjectInstance "|foliage5|kelp|group5|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group3|seaweed3"
+		# Maya Geometry : |foliage5|kelp|group3|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group3__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group3|seaweed3
+		ObjectInstance "|foliage5|kelp|group3|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group5|seaweed2"
+		# Maya Geometry : |foliage|kelp|group5|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group5__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group5|seaweed2
+		ObjectInstance "|foliage|kelp|group5|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group5|seaweed3"
+		# Maya Geometry : |foliage|kelp|group5|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group5__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group5|seaweed3
+		ObjectInstance "|foliage|kelp|group5|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group5|seaweed6"
+		# Maya Geometry : |foliage|kelp|group5|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group5__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group5|seaweed6
+		ObjectInstance "|foliage|kelp|group5|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group5|seaweed4"
+		# Maya Geometry : |foliage|kelp|group5|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group5__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group5|seaweed4
+		ObjectInstance "|foliage|kelp|group5|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group5|seaweed5"
+		# Maya Geometry : |foliage|kelp|group5|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group5__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group5|seaweed5
+		ObjectInstance "|foliage|kelp|group5|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group4|seaweed4"
+		# Maya Geometry : |foliage8|kelp|group4|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group4__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group4|seaweed4
+		ObjectInstance "|foliage8|kelp|group4|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group4|seaweed5"
+		# Maya Geometry : |foliage8|kelp|group4|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group4__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group4|seaweed5
+		ObjectInstance "|foliage8|kelp|group4|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group4|seaweed6"
+		# Maya Geometry : |foliage8|kelp|group4|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group4__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group4|seaweed6
+		ObjectInstance "|foliage8|kelp|group4|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group5|seaweed2"
+		# Maya Geometry : |foliage5|kelp|group5|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group5__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group5|seaweed2
+		ObjectInstance "|foliage5|kelp|group5|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group4|seaweed2"
+		# Maya Geometry : |foliage8|kelp|group4|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group4__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group4|seaweed2
+		ObjectInstance "|foliage8|kelp|group4|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group4|seaweed3"
+		# Maya Geometry : |foliage8|kelp|group4|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group4__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group4|seaweed3
+		ObjectInstance "|foliage8|kelp|group4|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage5|kelp|group3|seaweed5"
+		# Maya Geometry : |foliage5|kelp|group3|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage5__kelp__group3__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage5|kelp|group3|seaweed5
+		ObjectInstance "|foliage5|kelp|group3|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage|coral|SphereFBXASC046001"
+		# Maya Geometry : |foliage|coral|SphereFBXASC046001|SphereFBXASC046001Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__coral__SphereFBXASC046001__SphereFBXASC046001Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|coral|SphereFBXASC046001
+		ObjectInstance "|foliage|coral|SphereFBXASC046001"
+	AttributeEnd
+
+	ObjectBegin "|foliage|coral|SphereFBXASC046003"
+		# Maya Geometry : |foliage|coral|SphereFBXASC046003|SphereFBXASC046003Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__coral__SphereFBXASC046003__SphereFBXASC046003Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|coral|SphereFBXASC046003
+		ObjectInstance "|foliage|coral|SphereFBXASC046003"
+	AttributeEnd
+
+	ObjectBegin "|root|node_id8"
+		# Maya Geometry : |root|node_id8|node_id8Shape
+		NamedMaterial "PBRTTranslucentMaterial1"
+		Include "__root__node_id8__node_id8Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |root|node_id8
+		ObjectInstance "|root|node_id8"
+	AttributeEnd
+
+	ObjectBegin "|root|node_id9"
+		# Maya Geometry : |root|node_id9|node_id9Shape
+		NamedMaterial "PBRTTranslucentMaterial1"
+		Include "__root__node_id9__node_id9Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |root|node_id9
+		ObjectInstance "|root|node_id9"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group2|seaweed6"
+		# Maya Geometry : |foliage7|kelp|group2|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group2__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group2|seaweed6
+		ObjectInstance "|foliage7|kelp|group2|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage7|kelp|group2|seaweed5"
+		# Maya Geometry : |foliage7|kelp|group2|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage7__kelp__group2__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage7|kelp|group2|seaweed5
+		ObjectInstance "|foliage7|kelp|group2|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|coral|SphereFBXASC046003|SphereFBXASC046002"
+		# Maya Geometry : |foliage8|coral|SphereFBXASC046003|SphereFBXASC046002|SphereFBXASC046002Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__coral__SphereFBXASC046003__SphereFBXASC046002__SphereFBXASC046002Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|coral|SphereFBXASC046003|SphereFBXASC046002
+		ObjectInstance "|foliage8|coral|SphereFBXASC046003|SphereFBXASC046002"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|coral|SphereFBXASC046003"
+		# Maya Geometry : |foliage6|coral|SphereFBXASC046003|SphereFBXASC046003Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__coral__SphereFBXASC046003__SphereFBXASC046003Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|coral|SphereFBXASC046003
+		ObjectInstance "|foliage6|coral|SphereFBXASC046003"
+	AttributeEnd
+
+	ObjectBegin "|foliage6|coral|SphereFBXASC046001"
+		# Maya Geometry : |foliage6|coral|SphereFBXASC046001|SphereFBXASC046001Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage6__coral__SphereFBXASC046001__SphereFBXASC046001Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage6|coral|SphereFBXASC046001
+		ObjectInstance "|foliage6|coral|SphereFBXASC046001"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group4|seaweed5"
+		# Maya Geometry : |foliage3|kelp|group4|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group4__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group4|seaweed5
+		ObjectInstance "|foliage3|kelp|group4|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group4|seaweed4"
+		# Maya Geometry : |foliage3|kelp|group4|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group4__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group4|seaweed4
+		ObjectInstance "|foliage3|kelp|group4|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group4|seaweed6"
+		# Maya Geometry : |foliage3|kelp|group4|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group4__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group4|seaweed6
+		ObjectInstance "|foliage3|kelp|group4|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group4|seaweed3"
+		# Maya Geometry : |foliage3|kelp|group4|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group4__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group4|seaweed3
+		ObjectInstance "|foliage3|kelp|group4|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage3|kelp|group4|seaweed2"
+		# Maya Geometry : |foliage3|kelp|group4|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage3__kelp__group4__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage3|kelp|group4|seaweed2
+		ObjectInstance "|foliage3|kelp|group4|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group3|seaweed3"
+		# Maya Geometry : |foliage8|kelp|group3|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group3__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group3|seaweed3
+		ObjectInstance "|foliage8|kelp|group3|seaweed3"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group3|seaweed2"
+		# Maya Geometry : |foliage8|kelp|group3|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group3__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group3|seaweed2
+		ObjectInstance "|foliage8|kelp|group3|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group3|seaweed5"
+		# Maya Geometry : |foliage8|kelp|group3|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group3__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group3|seaweed5
+		ObjectInstance "|foliage8|kelp|group3|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group3|seaweed4"
+		# Maya Geometry : |foliage8|kelp|group3|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group3__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group3|seaweed4
+		ObjectInstance "|foliage8|kelp|group3|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage8|kelp|group3|seaweed6"
+		# Maya Geometry : |foliage8|kelp|group3|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage8__kelp__group3__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage8|kelp|group3|seaweed6
+		ObjectInstance "|foliage8|kelp|group3|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage9|kelp|group5|seaweed5"
+		# Maya Geometry : |foliage9|kelp|group5|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage9__kelp__group5__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage9|kelp|group5|seaweed5
+		ObjectInstance "|foliage9|kelp|group5|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group1|seaweed6"
+		# Maya Geometry : |foliage|kelp|group1|seaweed6|seaweed6Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group1__seaweed6__seaweed6Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group1|seaweed6
+		ObjectInstance "|foliage|kelp|group1|seaweed6"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group1|seaweed4"
+		# Maya Geometry : |foliage|kelp|group1|seaweed4|seaweed4Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group1__seaweed4__seaweed4Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group1|seaweed4
+		ObjectInstance "|foliage|kelp|group1|seaweed4"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group1|seaweed5"
+		# Maya Geometry : |foliage|kelp|group1|seaweed5|seaweed5Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group1__seaweed5__seaweed5Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group1|seaweed5
+		ObjectInstance "|foliage|kelp|group1|seaweed5"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group1|seaweed2"
+		# Maya Geometry : |foliage|kelp|group1|seaweed2|seaweed2Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group1__seaweed2__seaweed2Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group1|seaweed2
+		ObjectInstance "|foliage|kelp|group1|seaweed2"
+	AttributeEnd
+
+	ObjectBegin "|foliage|kelp|group1|seaweed3"
+		# Maya Geometry : |foliage|kelp|group1|seaweed3|seaweed3Shape
+		NamedMaterial "PBRTPlasticFoliageMaterial1"
+		Include "__foliage__kelp__group1__seaweed3__seaweed3Shape.pbrt"
+	ObjectEnd
+
+	AttributeBegin
+		# Maya Transform : |foliage|kelp|group1|seaweed3
+		ObjectInstance "|foliage|kelp|group1|seaweed3"
+	AttributeEnd
+
+WorldEnd

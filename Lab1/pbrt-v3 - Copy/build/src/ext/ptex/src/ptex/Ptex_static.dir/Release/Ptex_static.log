@@ -1,0 +1,13 @@
+﻿  Building Custom Rule V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/src/ext/ptex/src/ptex/CMakeLists.txt
+  PtexCache.cpp
+  PtexFilters.cpp
+  PtexHalf.cpp
+  PtexReader.cpp
+  PtexSeparableFilter.cpp
+  PtexSeparableKernel.cpp
+  PtexTriangleFilter.cpp
+  PtexTriangleKernel.cpp
+  PtexUtils.cpp
+  PtexWriter.cpp
+  Generating Code...
+  Ptex_static.vcxproj -> V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\src\ext\ptex\src\ptex\Release\Ptex.lib

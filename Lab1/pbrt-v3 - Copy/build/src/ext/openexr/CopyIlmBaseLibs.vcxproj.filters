@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\32e00763cc14c7f1934241c6b9e8417b\CopyIlmBaseLibs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\src\ext\openexr\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\src\ext\openexr\CMakeFiles\CopyIlmBaseLibs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{370AC03A-E68F-3861-B3ED-B08514B3254E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

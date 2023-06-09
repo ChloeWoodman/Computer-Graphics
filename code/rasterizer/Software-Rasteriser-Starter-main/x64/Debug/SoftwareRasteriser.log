@@ -1,0 +1,44 @@
+﻿  rasteriser.cpp
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\rasteriser.cpp(12,1): warning C4005: 'M_PI': macro redefinition
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\SDL2-2.0.12\include\SDL_stdinc.h(508): message : see previous definition of 'M_PI'
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\rasteriser.cpp(20,35): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\rasteriser.cpp(25,32): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\rasteriser.cpp(26,33): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\rasteriser.cpp(85,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\rasteriser.cpp(409,49): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\rasteriser.cpp(409,84): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\rasteriser.cpp(410,51): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\rasteriser.cpp(411,50): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\rasteriser.cpp(411,85): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\rasteriser.cpp(440,36): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\rasteriser.cpp(501,54): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\rasteriser.cpp(501,45): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\rasteriser.cpp(564,47): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\rasteriser.cpp(565,41): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\rasteriser.cpp(569,78): warning C4244: '=': conversion from 'float' to 'T', possible loss of data
+          with
+          [
+              T=unsigned char
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\rasteriser.cpp(572,78): warning C4244: '=': conversion from 'float' to 'T', possible loss of data
+          with
+          [
+              T=unsigned char
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\rasteriser.cpp(575,78): warning C4244: '=': conversion from 'float' to 'T', possible loss of data
+          with
+          [
+              T=unsigned char
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\rasteriser.cpp(581,117): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\rasteriser.cpp(581,101): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\rasteriser.cpp(581,85): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
+  SoftwareRasteriser.vcxproj -> C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\x64\Debug\SoftwareRasteriser.exe

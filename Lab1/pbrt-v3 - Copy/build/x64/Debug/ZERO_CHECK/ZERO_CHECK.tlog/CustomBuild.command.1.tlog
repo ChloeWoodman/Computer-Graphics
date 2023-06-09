@@ -1,0 +1,10 @@
+^V:\GITHUB\MILESTONES-CHLOEWOODMAN\LAB1\PBRT-V3\BUILD\CMAKEFILES\2FF48F21BC88018F68D79423A3AB7908\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SV:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3 -BV:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/PBRT-V3.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

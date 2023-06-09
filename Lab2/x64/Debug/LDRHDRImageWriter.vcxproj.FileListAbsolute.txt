@@ -1,0 +1,2 @@
+D:\Computer graphics\LDRHDRImageWriter\x64\Debug\LDRHDRImageWriter.exe
+V:\GitHub\milestones-ChloeWoodman\Labs\Lab2\x64\Debug\LDRHDRImageWriter.exe

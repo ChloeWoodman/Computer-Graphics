@@ -1,0 +1,2 @@
+V:\GitHub\milestones-ChloeWoodman\Lab 8\Software-Rasteriser-Starter-main\x64\Debug\SoftwareRasteriser.exe
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\code\rasterizer\Software-Rasteriser-Starter-main\x64\Debug\SoftwareRasteriser.exe

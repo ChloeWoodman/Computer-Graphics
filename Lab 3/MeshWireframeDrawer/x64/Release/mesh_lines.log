@@ -1,0 +1,5 @@
+﻿  Generating code
+  Previous IPDB and IOBJ mismatch, fall back to full compilation.
+V:\GitHub\milestones-ChloeWoodman\Lab 3\MeshWireframeDrawer\main.cpp(23): error C4716: 'plotLine': must return a value
+  All 201 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+LINK : fatal error LNK1257: code generation failed

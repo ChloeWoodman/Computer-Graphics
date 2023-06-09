@@ -1,0 +1,45 @@
+﻿  main.cpp
+V:\GitHub\milestones-ChloeWoodman\Lab 4\MeshWireframeDrawer-bc5cf078c454347679b56f6970e81c2695f977f7\main.cpp(54,22): warning C4244: '=': conversion from 't' to 'float', possible loss of data
+          with
+          [
+              t=int
+          ]
+V:\GitHub\milestones-ChloeWoodman\Lab 4\MeshWireframeDrawer-bc5cf078c454347679b56f6970e81c2695f977f7\main.cpp(57,32): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+V:\GitHub\milestones-ChloeWoodman\Lab 4\MeshWireframeDrawer-bc5cf078c454347679b56f6970e81c2695f977f7\main.cpp(75,32): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+V:\GitHub\milestones-ChloeWoodman\Lab 4\MeshWireframeDrawer-bc5cf078c454347679b56f6970e81c2695f977f7\main.cpp(114,96): warning C4244: 'argument': conversion from 'double' to 't', possible loss of data
+          with
+          [
+              t=int
+          ]
+V:\GitHub\milestones-ChloeWoodman\Lab 4\MeshWireframeDrawer-bc5cf078c454347679b56f6970e81c2695f977f7\main.cpp(114,59): warning C4244: 'argument': conversion from 'double' to 't', possible loss of data
+          with
+          [
+              t=int
+          ]
+V:\GitHub\milestones-ChloeWoodman\Lab 4\MeshWireframeDrawer-bc5cf078c454347679b56f6970e81c2695f977f7\main.cpp(136,73): warning C4244: 'argument': conversion from 'double' to 't', possible loss of data
+          with
+          [
+              t=int
+          ]
+V:\GitHub\milestones-ChloeWoodman\Lab 4\MeshWireframeDrawer-bc5cf078c454347679b56f6970e81c2695f977f7\main.cpp(136,47): warning C4244: 'argument': conversion from 'double' to 't', possible loss of data
+          with
+          [
+              t=int
+          ]
+V:\GitHub\milestones-ChloeWoodman\Lab 4\MeshWireframeDrawer-bc5cf078c454347679b56f6970e81c2695f977f7\main.cpp(144,127): warning C4244: 'argument': conversion from 'float' to 'unsigned char', possible loss of data
+V:\GitHub\milestones-ChloeWoodman\Lab 4\MeshWireframeDrawer-bc5cf078c454347679b56f6970e81c2695f977f7\main.cpp(144,110): warning C4244: 'argument': conversion from 'float' to 'unsigned char', possible loss of data
+V:\GitHub\milestones-ChloeWoodman\Lab 4\MeshWireframeDrawer-bc5cf078c454347679b56f6970e81c2695f977f7\main.cpp(144,93): warning C4244: 'argument': conversion from 'float' to 'unsigned char', possible loss of data
+V:\GitHub\milestones-ChloeWoodman\Lab 4\MeshWireframeDrawer-bc5cf078c454347679b56f6970e81c2695f977f7\geometry.h(15,75): warning C4244: 'argument': conversion from 'float' to 't', possible loss of data
+          with
+          [
+              t=int
+          ]
+V:\GitHub\milestones-ChloeWoodman\Lab 4\MeshWireframeDrawer-bc5cf078c454347679b56f6970e81c2695f977f7\geometry.h(15): message : while compiling class template member function 'Vec2<int> Vec2<int>::operator *(float) const'
+V:\GitHub\milestones-ChloeWoodman\Lab 4\MeshWireframeDrawer-bc5cf078c454347679b56f6970e81c2695f977f7\main.cpp(60): message : see reference to function template instantiation 'Vec2<int> Vec2<int>::operator *(float) const' being compiled
+V:\GitHub\milestones-ChloeWoodman\Lab 4\MeshWireframeDrawer-bc5cf078c454347679b56f6970e81c2695f977f7\main.cpp(37): message : see reference to class template instantiation 'Vec2<int>' being compiled
+V:\GitHub\milestones-ChloeWoodman\Lab 4\MeshWireframeDrawer-bc5cf078c454347679b56f6970e81c2695f977f7\geometry.h(15,70): warning C4244: 'argument': conversion from 'float' to 't', possible loss of data
+          with
+          [
+              t=int
+          ]
+  mesh_lines.vcxproj -> V:\GitHub\milestones-ChloeWoodman\Lab 4\MeshWireframeDrawer-bc5cf078c454347679b56f6970e81c2695f977f7\x64\Debug\mesh_lines.exe

@@ -1,0 +1,5 @@
+﻿  Building Custom Rule V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/src/ext/glog/CMakeLists.txt
+  utilities_unittest.cc
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\src\ext\glog\src\googletest.h(579,53): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\src\ext\glog\src\googletest.h(586,55): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+  utilities_unittest.vcxproj -> V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\src\ext\glog\Release\utilities_unittest.exe

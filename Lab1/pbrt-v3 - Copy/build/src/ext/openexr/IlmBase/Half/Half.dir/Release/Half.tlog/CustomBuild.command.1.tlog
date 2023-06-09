@@ -1,0 +1,38 @@
+^V:\GITHUB\MILESTONES-CHLOEWOODMAN\LAB1\PBRT-V3\BUILD\CMAKEFILES\C7081892682049B50520C4F8BA565F39\ELUT.H.RULE
+setlocal
+cd V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\src\ext\openexr\IlmBase\Half
+if %errorlevel% neq 0 goto :cmEnd
+V:
+if %errorlevel% neq 0 goto :cmEnd
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\src\ext\openexr\IlmBase\Half\Release\eLut.exe > V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/src/ext/openexr/IlmBase/Half/eLut.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^V:\GITHUB\MILESTONES-CHLOEWOODMAN\LAB1\PBRT-V3\BUILD\CMAKEFILES\C7081892682049B50520C4F8BA565F39\TOFLOAT.H.RULE
+setlocal
+cd V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\src\ext\openexr\IlmBase\Half
+if %errorlevel% neq 0 goto :cmEnd
+V:
+if %errorlevel% neq 0 goto :cmEnd
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\src\ext\openexr\IlmBase\Half\Release\toFloat.exe > V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/src/ext/openexr/IlmBase/Half/toFloat.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^V:\GITHUB\MILESTONES-CHLOEWOODMAN\LAB1\PBRT-V3\SRC\EXT\OPENEXR\ILMBASE\HALF\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SV:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3 -BV:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build --check-stamp-file V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/src/ext/openexr/IlmBase/Half/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

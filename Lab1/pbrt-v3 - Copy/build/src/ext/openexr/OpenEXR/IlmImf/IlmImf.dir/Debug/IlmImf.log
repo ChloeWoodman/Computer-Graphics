@@ -1,0 +1,15 @@
+﻿  Generating b44ExpLogTable.h
+  Generating dwaLookups.h
+   Building acceleration for DwaCompressor, 0.00 %
+   Building acceleration for DwaCompressor, 12.21 %
+   Building acceleration for DwaCompressor, 24.41 %
+   Building acceleration for DwaCompressor, 36.62 %
+   Building acceleration for DwaCompressor, 48.83 %
+   Building acceleration for DwaCompressor, 61.04 %
+   Building acceleration for DwaCompressor, 73.24 %
+   Building acceleration for DwaCompressor, 85.45 %
+   Building acceleration for DwaCompressor, 97.66 %
+  ImfB44Compressor.cpp
+  ImfDwaCompressor.cpp
+  Generating Code...
+  IlmImf.vcxproj -> V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\src\ext\openexr\OpenEXR\IlmImf\Debug\IlmImf.lib

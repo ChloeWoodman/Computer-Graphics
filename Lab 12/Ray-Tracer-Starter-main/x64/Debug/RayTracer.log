@@ -1,0 +1,172 @@
+﻿  main.cpp
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\ray.h(15,23): warning C4244: 'argument': conversion from 'double' to 'const T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\sphere.h(43,44): warning C4244: 'argument': conversion from 'const double' to 'const T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\camera.h(26,33): warning C4244: 'argument': conversion from 'double' to 'const T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\camera.h(27,31): warning C4244: 'argument': conversion from 'double' to 'const T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\camera.h(28,70): warning C4244: 'argument': conversion from 'double' to 'const T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\camera.h(32,20): warning C4244: 'argument': conversion from 'const double' to 'const T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\camera.h(36,33): warning C4244: 'argument': conversion from 'double' to 'const T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\camera.h(36,50): warning C4244: 'argument': conversion from 'double' to 'const T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\material.h(56,44): warning C4244: 'argument': conversion from 'const double' to 'const T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\material.h(68,47): warning C4244: 'argument': conversion from 'double' to 'const T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\material.h(68,24): warning C4244: 'argument': conversion from 'double' to 'const T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\material.h(69,28): warning C4244: 'argument': conversion from 'double' to 'const T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\main.cpp(13,1): warning C4005: 'M_PI': macro redefinition
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\SDL2-2.0.12\include\SDL_stdinc.h(508): message : see previous definition of 'M_PI'
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\main.cpp(110,17): warning C4244: 'argument': conversion from 'double' to 'const T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\main.cpp(110,72): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\main.cpp(110,48): warning C4244: 'argument': conversion from 'double' to 'const T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\main.cpp(120,62): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\main.cpp(120,85): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\main.cpp(120,30): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\main.cpp(121,16): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\main.cpp(146,66): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\main.cpp(148,61): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\main.cpp(241,89): warning C4244: 'argument': conversion from 'T' to 'Uint8', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\main.cpp(241,78): warning C4244: 'argument': conversion from 'T' to 'Uint8', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\main.cpp(241,67): warning C4244: 'argument': conversion from 'T' to 'Uint8', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\main.cpp(196,12): warning C4101: 't': unreferenced local variable
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\geometry.h(142,58): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\geometry.h(140): message : while compiling class template member function 'Vec3<float> Vec3<float>::random_in_unit_disk(void)'
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\camera.h(32): message : see reference to function template instantiation 'Vec3<float> Vec3<float>::random_in_unit_disk(void)' being compiled
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\ray.h(19): message : see reference to class template instantiation 'Vec3<float>' being compiled
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\geometry.h(142,38): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\geometry.h(131,78): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\geometry.h(130): message : while compiling class template member function 'Vec3<float> Vec3<float>::random(double,double)'
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\main.cpp(131): message : see reference to function template instantiation 'Vec3<float> Vec3<float>::random(double,double)' being compiled
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\geometry.h(131,55): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\geometry.h(131,32): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\geometry.h(128,62): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\geometry.h(127): message : while compiling class template member function 'Vec3<float> Vec3<float>::random(void)'
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\main.cpp(125): message : see reference to function template instantiation 'Vec3<float> Vec3<float>::random(void)' being compiled
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\geometry.h(128,47): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\geometry.h(128,32): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  RayTracer.vcxproj -> C:\Users\Peppe\Documents\GitHub\milestones-ChloeWoodman\Lab 11\Ray-Tracer-Starter-main\x64\Debug\RayTracer.exe

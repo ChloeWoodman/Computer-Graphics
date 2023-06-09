@@ -1,0 +1,943 @@
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_7fba0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7fba0.dir\Debug\\" /Fd"cmTC_7fba0.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_7fba0.vcxproj]
+
+
+
+Determining if files alloca.h exist failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_31ab4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  HAVE_ALLOCA_H.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_31ab4.dir\Debug\\" /Fd"cmTC_31ab4.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CheckIncludeFiles\HAVE_ALLOCA_H.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CheckIncludeFiles\HAVE_ALLOCA_H.c(2,10): fatal error C1083: Cannot open include file: 'alloca.h': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_31ab4.vcxproj]
+
+
+Source:
+/* */
+#include <alloca.h>
+
+
+int main(void){return 0;}
+
+Performing C++ SOURCE FILE Test HAVE_ITIMER failed with the following compile output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_e6978.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_ITIMER /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e6978.dir\Debug\\" /Fd"cmTC_e6978.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(4,10): fatal error C1083: Cannot open include file: 'sys/time.h': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_e6978.vcxproj]
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+#include <signal.h>
+#include <string.h>
+#include <sys/time.h>
+void ReportProfileSample(int, siginfo_t *, void *) { }
+int main() {
+    struct sigaction sa;
+    memset(&sa, 0, sizeof(sa));
+    sa.sa_sigaction = ReportProfileSample;
+    sa.sa_flags = SA_RESTART | SA_SIGINFO;
+    sigemptyset(&sa.sa_mask);
+    sigaction(SIGPROF, &sa, NULL);
+    static struct itimerval timer;
+    return setitimer(ITIMER_PROF, &timer, NULL) == 0 ? 0 : 1;
+}
+
+Performing C++ SOURCE FILE Test HAVE_MMAP failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_103c2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_MMAP /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_103c2.dir\Debug\\" /Fd"cmTC_103c2.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(3,10): fatal error C1083: Cannot open include file: 'sys/mman.h': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_103c2.vcxproj]
+
+
+Source file was:
+
+#include <fcntl.h>
+#include <sys/mman.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+int main() {
+   int fd = open("foo", O_RDONLY);
+   struct stat s;
+   fstat(fd, &s);
+   size_t len = s.st_size;
+   void *ptr = mmap(0, len, PROT_READ, MAP_FILE | MAP_SHARED, fd, 0);
+   munmap(ptr, len);   
+}
+
+Performing C++ SOURCE FILE Test HAVE_ATTRIBUTE_NOINLINE failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_e947b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_ATTRIBUTE_NOINLINE /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e947b.dir\Debug\\" /Fd"cmTC_e947b.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(1,16): error C2065: 'noinline': undeclared identifier [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_e947b.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(1,25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_e947b.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(1,27): error C2062: type 'void' unexpected [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_e947b.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(1,38): error C2143: syntax error: missing ';' before '{' [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_e947b.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(1,38): error C2447: '{': missing function header (old-style formal list?) [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_e947b.vcxproj]
+
+
+Source file was:
+__attribute__((noinline)) void foo() { }
+int main() { }
+Performing C++ SOURCE FILE Test HAVE_POSIX_MEMALIGN failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_fe426.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_POSIX_MEMALIGN /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_fe426.dir\Debug\\" /Fd"cmTC_fe426.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(5,3): error C3861: 'posix_memalign': identifier not found [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_fe426.vcxproj]
+
+
+Source file was:
+
+#include <stdlib.h>
+int main() {
+  void *ptr;
+  posix_memalign(&ptr, 32, 1024);
+} 
+Performing C++ SOURCE FILE Test HAVE_MEMALIGN failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_7a32a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_MEMALIGN /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_7a32a.dir\Debug\\" /Fd"cmTC_7a32a.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(4,17): error C3861: 'memalign': identifier not found [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_7a32a.vcxproj]
+
+
+Source file was:
+
+#include <malloc.h>
+int main() {
+    void *ptr = memalign(32, 1024);
+} 
+Performing C++ SOURCE FILE Test HAVE___THREAD failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_95dde.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE___THREAD /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_95dde.dir\Debug\\" /Fd"cmTC_95dde.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(2,10): error C2144: syntax error: 'int' should be preceded by ';' [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_95dde.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(2,14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_95dde.vcxproj]
+
+
+Source file was:
+
+__thread int x; int main() { }
+
+Determining size of off64_t failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_b2669.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  OFF64_T.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b2669.dir\Debug\\" /Fd"cmTC_b2669.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CheckTypeSize\OFF64_T.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CheckTypeSize\OFF64_T.c(29,12): error C2065: 'off64_t': undeclared identifier [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_b2669.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CheckTypeSize\OFF64_T.c(30,12): error C2065: 'off64_t': undeclared identifier [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_b2669.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CheckTypeSize\OFF64_T.c(31,12): error C2065: 'off64_t': undeclared identifier [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_b2669.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CheckTypeSize\OFF64_T.c(32,12): error C2065: 'off64_t': undeclared identifier [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_b2669.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CheckTypeSize\OFF64_T.c(33,12): error C2065: 'off64_t': undeclared identifier [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_b2669.vcxproj]
+
+
+V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CheckTypeSize/OFF64_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(off64_t))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function fseeko exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_183a0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_183a0.dir\Debug\\" /Fd"cmTC_183a0.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol fseeko referenced in function main [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_183a0.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\Debug\cmTC_183a0.exe : fatal error LNK1120: 1 unresolved externals [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_183a0.vcxproj]
+
+
+
+Determining if the include file unistd.h exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_927bb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_927bb.dir\Debug\\" /Fd"cmTC_927bb.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_927bb.vcxproj]
+
+
+
+Performing C++ SOURCE FILE Test HAVE_GCC_INLINE_ASM_AVX failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_e2f82.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_GCC_INLINE_ASM_AVX /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e2f82.dir\Debug\\" /Fd"cmTC_e2f82.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /wd4275 /wd4267 /wd4244 /wd4477 /wd4996 /wd4800 /wd4334 /wd4251 /wd4305 /wd4302 /wd4311 /wd4018 /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(13,1): fatal error C1189: #error:  No GCC style inline asm supported for AVX instructions [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_e2f82.vcxproj]
+
+
+Source file was:
+
+	int main()
+	{
+	 #if defined(__GNUC__) && defined(__SSE2__)
+		 int n   = 0;
+		 int eax = 0;
+		 int edx = 0;
+		 __asm__(
+			 "xgetbv     ;"
+			 "vzeroupper  "
+			 : "=a"(eax), "=d"(edx) : "c"(n) : );
+	 #else
+		 #error No GCC style inline asm supported for AVX instructions
+	 #endif
+	}
+	
+Performing C++ SOURCE FILE Test HAVE_SYSCONF_NPROCESSORS_ONLN failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_b2462.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_SYSCONF_NPROCESSORS_ONLN /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_b2462.dir\Debug\\" /Fd"cmTC_b2462.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /wd4275 /wd4267 /wd4244 /wd4477 /wd4996 /wd4800 /wd4334 /wd4251 /wd4305 /wd4302 /wd4311 /wd4018 /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(2,14): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_b2462.vcxproj]
+
+
+Source file was:
+
+    #include <unistd.h>
+    int main()
+    {
+        sysconf(_SC_NPROCESSORS_ONLN);
+    }
+    
+Determining if the include file dlfcn.h exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_c271a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c271a.dir\Debug\\" /Fd"cmTC_c271a.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'dlfcn.h': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_c271a.vcxproj]
+
+
+
+Determining if the include file execinfo.h exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_465f6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_465f6.dir\Debug\\" /Fd"cmTC_465f6.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'execinfo.h': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_465f6.vcxproj]
+
+
+
+Determining if the include file glob.h exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_1660f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1660f.dir\Debug\\" /Fd"cmTC_1660f.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'glob.h': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_1660f.vcxproj]
+
+
+
+Determining if the include file libunwind.h exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_fc99a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fc99a.dir\Debug\\" /Fd"cmTC_fc99a.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'libunwind.h': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_fc99a.vcxproj]
+
+
+
+Determining if the include file pwd.h exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_550c1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_550c1.dir\Debug\\" /Fd"cmTC_550c1.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'pwd.h': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_550c1.vcxproj]
+
+
+
+Determining if the include file strings.h exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_2308f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2308f.dir\Debug\\" /Fd"cmTC_2308f.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'strings.h': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_2308f.vcxproj]
+
+
+
+Determining if the include file sys/syscall.h exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_83998.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_83998.dir\Debug\\" /Fd"cmTC_83998.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'sys/syscall.h': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_83998.vcxproj]
+
+
+
+Determining if the include file sys/time.h exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_63f4f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_63f4f.dir\Debug\\" /Fd"cmTC_63f4f.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'sys/time.h': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_63f4f.vcxproj]
+
+
+
+Determining if the include file sys/utsname.h exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_4b665.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4b665.dir\Debug\\" /Fd"cmTC_4b665.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'sys/utsname.h': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_4b665.vcxproj]
+
+
+
+Determining if the include file syscall.h exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_b847c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b847c.dir\Debug\\" /Fd"cmTC_b847c.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'syscall.h': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_b847c.vcxproj]
+
+
+
+Determining if the include file syslog.h exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_1b4cc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1b4cc.dir\Debug\\" /Fd"cmTC_1b4cc.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'syslog.h': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_1b4cc.vcxproj]
+
+
+
+Determining if the include file ucontext.h exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_c75bc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c75bc.dir\Debug\\" /Fd"cmTC_c75bc.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'ucontext.h': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_c75bc.vcxproj]
+
+
+
+Determining if the include file unistd.h exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_0eacc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0eacc.dir\Debug\\" /Fd"cmTC_0eacc.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_0eacc.vcxproj]
+
+
+
+Determining if the include file unwind.h exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_7f6b5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7f6b5.dir\Debug\\" /Fd"cmTC_7f6b5.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'unwind.h': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_7f6b5.vcxproj]
+
+
+
+Determining if the include file ext/hash_map exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_06e01.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_06e01.dir\Debug\\" /Fd"cmTC_06e01.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx(1,10): fatal error C1083: Cannot open include file: 'ext/hash_map': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_06e01.vcxproj]
+
+
+
+Determining if the include file ext/hash_set exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_22fd2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_22fd2.dir\Debug\\" /Fd"cmTC_22fd2.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx(1,10): fatal error C1083: Cannot open include file: 'ext/hash_set': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_22fd2.vcxproj]
+
+
+
+Determining if the include file ext/slist exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_9083a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_9083a.dir\Debug\\" /Fd"cmTC_9083a.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx(1,10): fatal error C1083: Cannot open include file: 'ext/slist': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_9083a.vcxproj]
+
+
+
+Determining if the include file tr1/unordered_map exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_942d0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_942d0.dir\Debug\\" /Fd"cmTC_942d0.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx(1,10): fatal error C1083: Cannot open include file: 'tr1/unordered_map': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_942d0.vcxproj]
+
+
+
+Determining if the include file tr1/unordered_set exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_5ce5a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_5ce5a.dir\Debug\\" /Fd"cmTC_5ce5a.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx(1,10): fatal error C1083: Cannot open include file: 'tr1/unordered_set': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_5ce5a.vcxproj]
+
+
+
+Determining size of u_int16_t failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_f20e0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  HAVE_U_INT16_T.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f20e0.dir\Debug\\" /Fd"cmTC_f20e0.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CheckTypeSize\HAVE_U_INT16_T.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CheckTypeSize\HAVE_U_INT16_T.c(29,12): error C2065: 'u_int16_t': undeclared identifier [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_f20e0.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CheckTypeSize\HAVE_U_INT16_T.c(30,12): error C2065: 'u_int16_t': undeclared identifier [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_f20e0.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CheckTypeSize\HAVE_U_INT16_T.c(31,12): error C2065: 'u_int16_t': undeclared identifier [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_f20e0.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CheckTypeSize\HAVE_U_INT16_T.c(32,12): error C2065: 'u_int16_t': undeclared identifier [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_f20e0.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CheckTypeSize\HAVE_U_INT16_T.c(33,12): error C2065: 'u_int16_t': undeclared identifier [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_f20e0.vcxproj]
+
+
+V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CheckTypeSize/HAVE_U_INT16_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(u_int16_t))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function dladdr exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_0ed8d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=dladdr /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0ed8d.dir\Debug\\" /Fd"cmTC_0ed8d.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol dladdr referenced in function main [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_0ed8d.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\Debug\cmTC_0ed8d.exe : fatal error LNK1120: 1 unresolved externals [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_0ed8d.vcxproj]
+
+
+
+Determining if the function fcntl exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_58afb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fcntl /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_58afb.dir\Debug\\" /Fd"cmTC_58afb.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol fcntl referenced in function main [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_58afb.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\Debug\cmTC_58afb.exe : fatal error LNK1120: 1 unresolved externals [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_58afb.vcxproj]
+
+
+
+Determining if the function pread exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_1c205.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pread /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1c205.dir\Debug\\" /Fd"cmTC_1c205.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol pread referenced in function main [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_1c205.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\Debug\cmTC_1c205.exe : fatal error LNK1120: 1 unresolved externals [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_1c205.vcxproj]
+
+
+
+Determining if the function pwrite exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_9857c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pwrite /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9857c.dir\Debug\\" /Fd"cmTC_9857c.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol pwrite referenced in function main [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_9857c.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\Debug\cmTC_9857c.exe : fatal error LNK1120: 1 unresolved externals [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_9857c.vcxproj]
+
+
+
+Determining if the function sigaction exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_d3513.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=sigaction /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d3513.dir\Debug\\" /Fd"cmTC_d3513.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol sigaction referenced in function main [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_d3513.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\Debug\cmTC_d3513.exe : fatal error LNK1120: 1 unresolved externals [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_d3513.vcxproj]
+
+
+
+Determining if the function sigaltstack exists failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_143f1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=sigaltstack /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_143f1.dir\Debug\\" /Fd"cmTC_143f1.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol sigaltstack referenced in function main [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_143f1.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\Debug\cmTC_143f1.exe : fatal error LNK1120: 1 unresolved externals [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_143f1.vcxproj]
+
+
+
+Performing C++ SOURCE FILE Test HAVE_NO_DEPRECATED failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_d9897.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_NO_DEPRECATED /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_d9897.dir\Debug\\" /Fd"cmTC_d9897.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue  -Wno-deprecated "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line error D8021: invalid numeric argument '/Wno-deprecated' [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_d9897.vcxproj]
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_NO_UNNAMED_TYPE_TEMPLATE_ARGS failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_e81dd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_NO_UNNAMED_TYPE_TEMPLATE_ARGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e81dd.dir\Debug\\" /Fd"cmTC_e81dd.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue  -Wno-unnamed-type-template-args "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line error D8021: invalid numeric argument '/Wno-unnamed-type-template-args' [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_e81dd.vcxproj]
+
+
+Source file was:
+int main() { return 0; }
+Determining if the function get_static_proc_name exists in the unwind failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_81833.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=get_static_proc_name /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_81833.dir\Debug\\" /Fd"cmTC_81833.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.c"
+LINK : fatal error LNK1104: cannot open file 'unwind.lib' [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_81833.vcxproj]
+
+
+
+Performing C SOURCE FILE Test HAVE___ATTRIBUTE__ failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_c557c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE___ATTRIBUTE__ /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c557c.dir\Debug\\" /Fd"cmTC_c557c.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,23): error C2061: syntax error: identifier '__attribute__' [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_c557c.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,23): error C2059: syntax error: ';' [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_c557c.vcxproj]
+
+
+Source file was:
+
+#include <stdlib.h>
+static void foo(void) __attribute__ ((unused));
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test HAVE___ATTRIBUTE__VISIBILITY_DEFAULT failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_7bd0d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE___ATTRIBUTE__VISIBILITY_DEFAULT /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7bd0d.dir\Debug\\" /Fd"cmTC_7bd0d.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,23): error C2061: syntax error: identifier '__attribute__' [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_7bd0d.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,23): error C2059: syntax error: ';' [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_7bd0d.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,50): error C2143: syntax error: missing ')' before 'string' [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_7bd0d.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,59): error C2059: syntax error: ')' [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_7bd0d.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,60): error C2059: syntax error: ')' [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_7bd0d.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,61): error C2059: syntax error: ')' [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_7bd0d.vcxproj]
+
+
+Source file was:
+
+#include <stdlib.h>
+static void foo(void) __attribute__ ((visibility("default")));
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test HAVE___ATTRIBUTE__VISIBILITY_HIDDEN failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_28350.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE___ATTRIBUTE__VISIBILITY_HIDDEN /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_28350.dir\Debug\\" /Fd"cmTC_28350.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,23): error C2061: syntax error: identifier '__attribute__' [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_28350.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,23): error C2059: syntax error: ';' [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_28350.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,50): error C2143: syntax error: missing ')' before 'string' [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_28350.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,58): error C2059: syntax error: ')' [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_28350.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,59): error C2059: syntax error: ')' [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_28350.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,60): error C2059: syntax error: ')' [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_28350.vcxproj]
+
+
+Source file was:
+
+#include <stdlib.h>
+static void foo(void) __attribute__ ((visibility("hidden")));
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test HAVE___BUILTIN_EXPECT failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_1496d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE___BUILTIN_EXPECT /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1496d.dir\Debug\\" /Fd"cmTC_1496d.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(2,38): warning C4013: '__builtin_expect' undefined; assuming extern returning int [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_1496d.vcxproj]
+src.obj : error LNK2019: unresolved external symbol __builtin_expect referenced in function main [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_1496d.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\Debug\cmTC_1496d.exe : fatal error LNK1120: 1 unresolved externals [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_1496d.vcxproj]
+
+
+Source file was:
+
+int main(void) { if (__builtin_expect(0, 0)) return 1; return 0; }
+
+Performing C SOURCE FILE Test HAVE___SYNC_VAL_COMPARE_AND_SWAP failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_38cf9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE___SYNC_VAL_COMPARE_AND_SWAP /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_38cf9.dir\Debug\\" /Fd"cmTC_38cf9.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(4,41): warning C4013: '__sync_val_compare_and_swap' undefined; assuming extern returning int [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_38cf9.vcxproj]
+src.obj : error LNK2019: unresolved external symbol __sync_val_compare_and_swap referenced in function main [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_38cf9.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\Debug\cmTC_38cf9.exe : fatal error LNK1120: 1 unresolved externals [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_38cf9.vcxproj]
+
+
+Source file was:
+
+int main(void)
+{
+  int a; if (__sync_val_compare_and_swap(&a, 0, 1)) return 1; return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_RWLOCK failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_8c93d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_RWLOCK /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8c93d.dir\Debug\\" /Fd"cmTC_8c93d.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_8c93d.vcxproj]
+
+
+Source file was:
+
+#define _XOPEN_SOURCE 500
+#include <pthread.h>
+int main(void)
+{
+  pthread_rwlock_t l;
+  pthread_rwlock_init(&l, NULL);
+  pthread_rwlock_rdlock(&l);
+  return 0;
+}
+
+Performing C++ SOURCE FILE Test STL_NO_NAMESPACE failed with the following output:
+Change Dir: V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_b40e1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D STL_NO_NAMESPACE /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_b40e1.dir\Debug\\" /Fd"cmTC_b40e1.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx"
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(3,7): error C2143: syntax error: missing ';' before '<' [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_b40e1.vcxproj]
+V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(3,7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_b40e1.vcxproj]
+
+
+Source file was:
+
+#include <vector>
+vector<int> t; int main() { }
+

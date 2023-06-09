@@ -1,0 +1,14 @@
+﻿  Building Custom Rule V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/CMakeLists.txt
+  IlmThread.cpp
+  IlmThreadMutex.cpp
+  IlmThreadMutexPosix.cpp
+  IlmThreadPool.cpp
+  IlmThreadPosix.cpp
+  IlmThreadSemaphore.cpp
+  IlmThreadSemaphorePosixCompat.cpp
+  IlmThreadSemaphorePosix.cpp
+  IlmThreadMutexWin32.cpp
+  IlmThreadSemaphoreWin32.cpp
+  IlmThreadWin32.cpp
+  Generating Code...
+  IlmThread.vcxproj -> V:\GitHub\milestones-ChloeWoodman\Lab1\pbrt-v3\build\src\ext\openexr\IlmBase\IlmThread\Release\IlmThread.lib

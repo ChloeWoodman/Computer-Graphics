@@ -1,0 +1,10 @@
+^V:\GITHUB\MILESTONES-CHLOEWOODMAN\LAB1\PBRT-V3\SRC\EXT\OPENEXR\ILMBASE\HALF\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SV:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3 -BV:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build --check-stamp-file V:/GitHub/milestones-ChloeWoodman/Lab1/pbrt-v3/build/src/ext/openexr/IlmBase/Half/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
